@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:PonchoERG-rescue
 LIBS:74xgxx
 LIBS:74xx
 LIBS:ac-dc
@@ -84,7 +85,6 @@ LIBS:GNDD
 LIBS:NetTie
 LIBS:PonchoERG
 LIBS:PonchoERG-cache
-LIBS:PonchoERG-rescue
 LIBS:Power
 LIBS:VCC
 EELAYER 25 0
