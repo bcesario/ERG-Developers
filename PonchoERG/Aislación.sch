@@ -140,7 +140,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 2600
 Connection ~ 4000 2600
-Text Notes 3350 1850 0    60   ~ 0
+Text Notes 3500 1250 0    60   ~ 0
 +5V_ISO
 Text Notes 850  1850 0    60   ~ 0
 +3.3V_ISO
@@ -244,9 +244,9 @@ Wire Notes Line
 	6300 2450 6300 2000
 Wire Notes Line
 	6300 2000 5800 2000
-Text Notes 7100 2500 0    60   ~ 0
+Text Notes 7350 2050 0    60   ~ 0
 +5V_NISO
-Text Notes 7100 2600 0    60   ~ 0
+Text Notes 7050 2750 0    60   ~ 0
 GND_NISO
 Wire Wire Line
 	5300 3800 5150 3800

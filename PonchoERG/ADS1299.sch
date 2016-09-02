@@ -590,7 +590,7 @@ Connection ~ 3900 5500
 Wire Wire Line
 	3900 5100 4600 5100
 Wire Wire Line
-	6400 3800 6600 3800
+	6400 3800 7050 3800
 Wire Wire Line
 	6400 3600 6550 3600
 Wire Wire Line
@@ -607,7 +607,7 @@ Text GLabel 7100 2600 1    60   Input ~ 0
 +3.3V
 Text GLabel 3700 3700 1    60   Input ~ 0
 +3.3V
-Text GLabel 6600 3800 2    60   Input ~ 0
+Text GLabel 7050 3800 2    60   Input ~ 0
 +3.3V
 Text GLabel 7200 5100 2    60   Input ~ 0
 +3.3V
@@ -633,4 +633,6 @@ Text GLabel 7750 3700 3    60   Output ~ 0
 GNDA
 Text GLabel 9900 2400 1    60   Input ~ 0
 +5V
+Text Label 6650 3800 0    60   ~ 0
+¡33333
 $EndSCHEMATC
