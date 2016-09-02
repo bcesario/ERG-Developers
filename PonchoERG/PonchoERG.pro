@@ -1,4 +1,4 @@
-update=30/08/2016 19:35:25
+update=31/08/2016 21:21:13
 version=1
 last_client=kicad
 [cvpcb]
@@ -121,3 +121,5 @@ LibName88=libs/PonchoERG-cache
 LibName89=libs/PonchoERG-rescue
 LibName90=libs/Power
 LibName91=libs/VCC
+LibName92=libs/net-tie
+LibName93=libs/TPD2E001

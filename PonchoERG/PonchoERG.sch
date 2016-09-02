@@ -80,13 +80,11 @@ LIBS:Zilog
 LIBS:ADS1299
 LIBS:ADuM2401
 LIBS:ADuM6401
-LIBS:CKCL44X7R1H
-LIBS:GNDD
 LIBS:NetTie
 LIBS:PonchoERG
 LIBS:PonchoERG-cache
-LIBS:Power
-LIBS:VCC
+LIBS:net-tie
+LIBS:TPD2E001
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -123,7 +121,7 @@ F 3 "" H 10150 6000 60  0001 C CNN
 	1    10150 6000
 	1    0    0    -1  
 $EndComp
-Text Notes 12650 3450 0    60   ~ 0
+Text Notes 7350 6300 0    60   ~ 0
 Luego de abrir el nuevo proyecto:\n1)Editar datos del rótulo.\n2)Editar los archivos del subdirectorio "doc".\n2.1) Agregarse en el archivo de licencia.\n2.2) Colocar info mínima del Poncho en el LEEME.txt\n2.3) Colocar info mínima en el CAMBIOS.doc
 $Sheet
 S 550  600  2350 1850
@@ -351,12 +349,6 @@ F 3 "" H 5050 5400 50  0000 C CNN
 $EndComp
 NoConn ~ 5300 6750
 Wire Wire Line
-	2900 2250 4600 2250
-Wire Wire Line
-	4600 2250 4600 4400
-Wire Wire Line
-	4600 4400 2900 4400
-Wire Wire Line
 	2900 2350 4700 2350
 Wire Wire Line
 	4700 2350 4700 4500
@@ -390,4 +382,10 @@ Wire Wire Line
 	5650 6450 5650 7550
 Wire Wire Line
 	5650 7550 2900 7550
+Wire Wire Line
+	2900 2250 4600 2250
+Wire Wire Line
+	4600 2250 4600 4400
+Wire Wire Line
+	4600 4400 2900 4400
 $EndSCHEMATC
