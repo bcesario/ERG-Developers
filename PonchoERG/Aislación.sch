@@ -1,90 +1,10 @@
 EESchema Schematic File Version 2
 LIBS:PonchoERG-rescue
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
-LIBS:ADS1299
-LIBS:ADuM2401
-LIBS:ADuM6401
-LIBS:NetTie
+LIBS:Misc_Poncho_Grande
+LIBS:Poncho_Esqueleto
 LIBS:PonchoERG
+LIBS:power
 LIBS:PonchoERG-cache
-LIBS:net-tie
-LIBS:TPD2E001
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -140,7 +60,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 2600
 Connection ~ 4000 2600
-Text Notes 3500 1250 0    60   ~ 0
+Text Notes 3300 1850 0    60   ~ 0
 +5V_ISO
 Text Notes 850  1850 0    60   ~ 0
 +3.3V_ISO
@@ -223,19 +143,8 @@ Wire Wire Line
 Connection ~ 5300 2500
 Text Notes 6400 2300 0    60   ~ 0
 SPI to FRDM
-Text Notes 8000 2600 0    60   ~ 0
+Text Notes 7700 2550 0    60   ~ 0
 POWER from FRDM
-$Comp
-L CONN_01X02 J3
-U 1 1 57C3B76D
-P 7800 2550
-F 0 "J3" H 7800 2700 50  0000 C CNN
-F 1 "POWER_PONCHO" V 7900 2550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7800 2550 50  0001 C CNN
-F 3 "" H 7800 2550 50  0000 C CNN
-	1    7800 2550
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	5800 2450 5800 2000
 Wire Notes Line
@@ -244,10 +153,6 @@ Wire Notes Line
 	6300 2450 6300 2000
 Wire Notes Line
 	6300 2000 5800 2000
-Text Notes 7350 2050 0    60   ~ 0
-+5V_NISO
-Text Notes 7050 2750 0    60   ~ 0
-GND_NISO
 Wire Wire Line
 	5300 3800 5150 3800
 Wire Wire Line
@@ -365,18 +270,6 @@ Wire Wire Line
 	2850 800  2850 850 
 Wire Wire Line
 	2850 1350 2850 1450
-Text GLabel 3800 1800 1    60   Input ~ 0
-+5V
-Text GLabel 2850 800  1    60   Input ~ 0
-+5V
-Text GLabel 1400 1800 1    60   Input ~ 0
-+3.3V
-Text GLabel 1400 2700 3    60   Output ~ 0
-GNDD
-Text GLabel 2000 2700 3    60   Output ~ 0
-GNDA
-Text GLabel 2850 1450 3    60   Output ~ 0
-GNDA
 $Comp
 L R R0
 U 1 1 57C7BBDF
@@ -412,4 +305,84 @@ F 3 "" H 4600 4150 60  0000 C CNN
 	1    4600 4150
 	-1   0    0    -1  
 $EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR031
+U 1 1 57CB14DA
+P 2000 2700
+F 0 "#PWR031" H 2000 2450 50  0001 C CNN
+F 1 "GNDA" H 2000 2550 50  0000 C CNN
+F 2 "" H 2000 2700 50  0000 C CNN
+F 3 "" H 2000 2700 50  0000 C CNN
+	1    2000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR032
+U 1 1 57CB1500
+P 2850 1450
+F 0 "#PWR032" H 2850 1200 50  0001 C CNN
+F 1 "GNDA" H 2850 1300 50  0000 C CNN
+F 2 "" H 2850 1450 50  0000 C CNN
+F 3 "" H 2850 1450 50  0000 C CNN
+	1    2850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR033
+U 1 1 57CB1526
+P 1400 2700
+F 0 "#PWR033" H 1400 2450 50  0001 C CNN
+F 1 "Earth" H 1400 2550 50  0001 C CNN
+F 2 "" H 1400 2700 50  0000 C CNN
+F 3 "" H 1400 2700 50  0000 C CNN
+	1    1400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-PonchoERG #PWR?
+U 1 1 57CB154C
+P 1400 1800
+AR Path="/57CB154C" Ref="#PWR?"  Part="1" 
+AR Path="/57BDC3A8/57CB154C" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 1400 1650 50  0001 C CNN
+F 1 "+3.3V" H 1400 1940 50  0000 C CNN
+F 2 "" H 1400 1800 50  0000 C CNN
+F 3 "" H 1400 1800 50  0000 C CNN
+	1    1400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR035
+U 1 1 57CB1572
+P 2850 800
+F 0 "#PWR035" H 2850 650 50  0001 C CNN
+F 1 "+5V" H 2850 940 50  0000 C CNN
+F 2 "" H 2850 800 50  0000 C CNN
+F 3 "" H 2850 800 50  0000 C CNN
+	1    2850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR036
+U 1 1 57CB1598
+P 3800 1800
+F 0 "#PWR036" H 3800 1650 50  0001 C CNN
+F 1 "+5V" H 3800 1940 50  0000 C CNN
+F 2 "" H 3800 1800 50  0000 C CNN
+F 3 "" H 3800 1800 50  0000 C CNN
+	1    3800 1800
+	1    0    0    -1  
+$EndComp
+Text Label 7600 2500 2    60   ~ 0
++5V_NISO
+Text Label 7600 2600 2    60   ~ 0
+GND_NISO
+Wire Notes Line
+	7100 2400 7100 2650
+Wire Notes Line
+	7100 2650 7650 2650
+Wire Notes Line
+	7650 2650 7650 2400
+Wire Notes Line
+	7650 2400 7100 2400
 $EndSCHEMATC

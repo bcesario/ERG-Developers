@@ -1,90 +1,10 @@
 EESchema Schematic File Version 2
 LIBS:PonchoERG-rescue
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
-LIBS:ADS1299
-LIBS:ADuM2401
-LIBS:ADuM6401
-LIBS:NetTie
+LIBS:Misc_Poncho_Grande
+LIBS:Poncho_Esqueleto
 LIBS:PonchoERG
+LIBS:power
 LIBS:PonchoERG-cache
-LIBS:net-tie
-LIBS:TPD2E001
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -601,38 +521,186 @@ Wire Wire Line
 	6400 3400 6550 3400
 Text HLabel 6800 1600 0    60   Input ~ 0
 IN_REF
-Text GLabel 9000 2400 1    60   Input ~ 0
-+3.3V
-Text GLabel 7100 2600 1    60   Input ~ 0
-+3.3V
-Text GLabel 3700 3700 1    60   Input ~ 0
-+3.3V
-Text GLabel 7050 3800 2    60   Input ~ 0
-+3.3V
-Text GLabel 7200 5100 2    60   Input ~ 0
-+3.3V
-Text GLabel 9000 3100 3    60   Output ~ 0
-GNDD
-Text GLabel 6500 5500 3    60   Output ~ 0
-GNDD
-Text GLabel 4500 5600 3    60   Output ~ 0
-GNDD
-Text GLabel 7200 4500 2    60   Output ~ 0
-GNDD
-Text GLabel 6650 3500 2    60   Output ~ 0
-GNDD
-Text GLabel 9900 3100 3    60   Output ~ 0
-GNDA
-Text GLabel 3500 4200 1    60   Output ~ 0
-GNDA
-Text GLabel 7400 2700 1    60   Output ~ 0
-GNDA
-Text GLabel 3600 5600 3    60   Output ~ 0
-GNDA
-Text GLabel 7750 3700 3    60   Output ~ 0
-GNDA
-Text GLabel 9900 2400 1    60   Input ~ 0
-+5V
-Text Label 6650 3800 0    60   ~ 0
-¡33333
+$Comp
+L +3.3V-RESCUE-PonchoERG #PWR?
+U 1 1 57CB1828
+P 7050 3800
+AR Path="/57CB1828" Ref="#PWR?"  Part="1" 
+AR Path="/57BDC369/57CB1828" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7050 3650 50  0001 C CNN
+F 1 "+3.3V" H 7050 3940 50  0000 C CNN
+F 2 "" H 7050 3800 50  0000 C CNN
+F 3 "" H 7050 3800 50  0000 C CNN
+	1    7050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V-RESCUE-PonchoERG #PWR?
+U 1 1 57CB1856
+P 7200 5100
+AR Path="/57CB1856" Ref="#PWR?"  Part="1" 
+AR Path="/57BDC369/57CB1856" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7200 4950 50  0001 C CNN
+F 1 "+3.3V" H 7200 5240 50  0000 C CNN
+F 2 "" H 7200 5100 50  0000 C CNN
+F 3 "" H 7200 5100 50  0000 C CNN
+	1    7200 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V-RESCUE-PonchoERG #PWR?
+U 1 1 57CB18B2
+P 9000 2400
+AR Path="/57CB18B2" Ref="#PWR?"  Part="1" 
+AR Path="/57BDC369/57CB18B2" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 9000 2250 50  0001 C CNN
+F 1 "+3.3V" H 9000 2540 50  0000 C CNN
+F 2 "" H 9000 2400 50  0000 C CNN
+F 3 "" H 9000 2400 50  0000 C CNN
+	1    9000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR018
+U 1 1 57CB18ED
+P 9900 2400
+F 0 "#PWR018" H 9900 2250 50  0001 C CNN
+F 1 "+5V" H 9900 2540 50  0000 C CNN
+F 2 "" H 9900 2400 50  0000 C CNN
+F 3 "" H 9900 2400 50  0000 C CNN
+	1    9900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR019
+U 1 1 57CB195C
+P 4500 5600
+F 0 "#PWR019" H 4500 5350 50  0001 C CNN
+F 1 "Earth" H 4500 5450 50  0001 C CNN
+F 2 "" H 4500 5600 50  0000 C CNN
+F 3 "" H 4500 5600 50  0000 C CNN
+	1    4500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR020
+U 1 1 57CB198A
+P 6500 5500
+F 0 "#PWR020" H 6500 5250 50  0001 C CNN
+F 1 "Earth" H 6500 5350 50  0001 C CNN
+F 2 "" H 6500 5500 50  0000 C CNN
+F 3 "" H 6500 5500 50  0000 C CNN
+	1    6500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR021
+U 1 1 57CB19B8
+P 7200 4500
+F 0 "#PWR021" H 7200 4250 50  0001 C CNN
+F 1 "Earth" H 7200 4350 50  0001 C CNN
+F 2 "" H 7200 4500 50  0000 C CNN
+F 3 "" H 7200 4500 50  0000 C CNN
+	1    7200 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR022
+U 1 1 57CB19E6
+P 6650 3500
+F 0 "#PWR022" H 6650 3250 50  0001 C CNN
+F 1 "Earth" H 6650 3350 50  0001 C CNN
+F 2 "" H 6650 3500 50  0000 C CNN
+F 3 "" H 6650 3500 50  0000 C CNN
+	1    6650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR023
+U 1 1 57CB1A14
+P 9000 3100
+F 0 "#PWR023" H 9000 2850 50  0001 C CNN
+F 1 "Earth" H 9000 2950 50  0001 C CNN
+F 2 "" H 9000 3100 50  0000 C CNN
+F 3 "" H 9000 3100 50  0000 C CNN
+	1    9000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR024
+U 1 1 57CB1A83
+P 7400 2700
+F 0 "#PWR024" H 7400 2450 50  0001 C CNN
+F 1 "GNDA" H 7400 2550 50  0000 C CNN
+F 2 "" H 7400 2700 50  0000 C CNN
+F 3 "" H 7400 2700 50  0000 C CNN
+	1    7400 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR025
+U 1 1 57CB1AB1
+P 9900 3100
+F 0 "#PWR025" H 9900 2850 50  0001 C CNN
+F 1 "GNDA" H 9900 2950 50  0000 C CNN
+F 2 "" H 9900 3100 50  0000 C CNN
+F 3 "" H 9900 3100 50  0000 C CNN
+	1    9900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR026
+U 1 1 57CB1ADF
+P 3500 4200
+F 0 "#PWR026" H 3500 3950 50  0001 C CNN
+F 1 "GNDA" H 3500 4050 50  0000 C CNN
+F 2 "" H 3500 4200 50  0000 C CNN
+F 3 "" H 3500 4200 50  0000 C CNN
+	1    3500 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR027
+U 1 1 57CB1B0D
+P 3600 5600
+F 0 "#PWR027" H 3600 5350 50  0001 C CNN
+F 1 "GNDA" H 3600 5450 50  0000 C CNN
+F 2 "" H 3600 5600 50  0000 C CNN
+F 3 "" H 3600 5600 50  0000 C CNN
+	1    3600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA-RESCUE-PonchoERG #PWR028
+U 1 1 57CB1B3B
+P 7750 3700
+F 0 "#PWR028" H 7750 3450 50  0001 C CNN
+F 1 "GNDA" H 7750 3550 50  0000 C CNN
+F 2 "" H 7750 3700 50  0000 C CNN
+F 3 "" H 7750 3700 50  0000 C CNN
+	1    7750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR029
+U 1 1 57CB3AA5
+P 7100 2600
+F 0 "#PWR029" H 7100 2450 50  0001 C CNN
+F 1 "+5V" H 7100 2740 50  0000 C CNN
+F 2 "" H 7100 2600 50  0000 C CNN
+F 3 "" H 7100 2600 50  0000 C CNN
+	1    7100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR030
+U 1 1 57CB3AD3
+P 3700 3700
+F 0 "#PWR030" H 3700 3550 50  0001 C CNN
+F 1 "+5V" H 3700 3840 50  0000 C CNN
+F 2 "" H 3700 3700 50  0000 C CNN
+F 3 "" H 3700 3700 50  0000 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

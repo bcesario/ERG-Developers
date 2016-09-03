@@ -1,90 +1,10 @@
 EESchema Schematic File Version 2
 LIBS:PonchoERG-rescue
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
-LIBS:ADS1299
-LIBS:ADuM2401
-LIBS:ADuM6401
-LIBS:NetTie
+LIBS:Misc_Poncho_Grande
+LIBS:Poncho_Esqueleto
 LIBS:PonchoERG
+LIBS:power
 LIBS:PonchoERG-cache
-LIBS:net-tie
-LIBS:TPD2E001
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1026,18 +946,94 @@ Wire Wire Line
 	3950 6800 5900 6800
 Text HLabel 5900 6800 2    60   Output ~ 0
 IN_REF
-Text GLabel 6400 1900 3    60   Output ~ 0
-GNDD
-Text GLabel 1500 7250 3    60   Output ~ 0
-GNDD
-Text GLabel 6450 3400 3    60   Output ~ 0
-GNDD
-Text GLabel 6450 4900 3    60   Output ~ 0
-GNDD
-Text GLabel 6450 6400 3    60   Output ~ 0
-GNDD
-Text GLabel 5150 7500 3    60   Output ~ 0
-GNDD
-Text GLabel 1200 7250 3    60   Input ~ 0
-+3.3V
+$Comp
+L +3.3V-RESCUE-PonchoERG #PWR?
+U 1 1 57CB28B5
+P 1200 7250
+AR Path="/57CB28B5" Ref="#PWR?"  Part="1" 
+AR Path="/57BDBDC8/57CB28B5" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 1200 7100 50  0001 C CNN
+F 1 "+3.3V" H 1200 7390 50  0000 C CNN
+F 2 "" H 1200 7250 50  0000 C CNN
+F 3 "" H 1200 7250 50  0000 C CNN
+	1    1200 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 57CB2925
+P 1500 7250
+F 0 "#PWR02" H 1500 7000 50  0001 C CNN
+F 1 "Earth" H 1500 7100 50  0001 C CNN
+F 2 "" H 1500 7250 50  0000 C CNN
+F 3 "" H 1500 7250 50  0000 C CNN
+	1    1500 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR03
+U 1 1 57CB2C47
+P 5150 7500
+F 0 "#PWR03" H 5150 7250 50  0001 C CNN
+F 1 "Earth" H 5150 7350 50  0001 C CNN
+F 2 "" H 5150 7500 50  0000 C CNN
+F 3 "" H 5150 7500 50  0000 C CNN
+	1    5150 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR04
+U 1 1 57CB2CB7
+P 6450 6400
+F 0 "#PWR04" H 6450 6150 50  0001 C CNN
+F 1 "Earth" H 6450 6250 50  0001 C CNN
+F 2 "" H 6450 6400 50  0000 C CNN
+F 3 "" H 6450 6400 50  0000 C CNN
+	1    6450 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 57CB2D27
+P 6450 4900
+F 0 "#PWR05" H 6450 4650 50  0001 C CNN
+F 1 "Earth" H 6450 4750 50  0001 C CNN
+F 2 "" H 6450 4900 50  0000 C CNN
+F 3 "" H 6450 4900 50  0000 C CNN
+	1    6450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 57CB3077
+P 6400 1900
+F 0 "#PWR06" H 6400 1650 50  0001 C CNN
+F 1 "Earth" H 6400 1750 50  0001 C CNN
+F 2 "" H 6400 1900 50  0000 C CNN
+F 3 "" H 6400 1900 50  0000 C CNN
+	1    6400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 57CB30E7
+P 6450 3400
+F 0 "#PWR07" H 6450 3150 50  0001 C CNN
+F 1 "Earth" H 6450 3250 50  0001 C CNN
+F 2 "" H 6450 3400 50  0000 C CNN
+F 3 "" H 6450 3400 50  0000 C CNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG014
+U 1 1 57CB771E
+P 2000 7100
+F 0 "#FLG014" H 2000 7195 30  0001 C CNN
+F 1 "PWR_FLAG" H 2000 7280 30  0000 C CNN
+F 2 "" H 2000 7100 60  0000 C CNN
+F 3 "" H 2000 7100 60  0000 C CNN
+	1    2000 7100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

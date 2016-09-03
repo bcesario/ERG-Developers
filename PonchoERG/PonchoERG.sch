@@ -1,90 +1,10 @@
 EESchema Schematic File Version 2
 LIBS:PonchoERG-rescue
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
-LIBS:ADS1299
-LIBS:ADuM2401
-LIBS:ADuM6401
-LIBS:NetTie
+LIBS:Misc_Poncho_Grande
+LIBS:Poncho_Esqueleto
 LIBS:PonchoERG
+LIBS:power
 LIBS:PonchoERG-cache
-LIBS:net-tie
-LIBS:TPD2E001
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -336,56 +256,122 @@ Wire Wire Line
 	3700 4700 3700 7150
 Wire Wire Line
 	3700 7150 2900 7150
-$Comp
-L CONN_02X04 J4
-U 1 1 57C36F2F
-P 5050 6600
-F 0 "J4" H 5050 6850 50  0000 C CNN
-F 1 "CONN_02X04" H 5050 6350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 5050 5400 50  0001 C CNN
-F 3 "" H 5050 5400 50  0000 C CNN
-	1    5050 6600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5300 6750
 Wire Wire Line
 	2900 2350 4700 2350
 Wire Wire Line
 	4700 2350 4700 4500
 Wire Wire Line
 	4700 4500 2900 4500
-Text Notes 4750 7000 0    60   ~ 0
-SPI & Control
-Wire Wire Line
-	2900 6450 4800 6450
-Wire Wire Line
-	2900 6550 4800 6550
-Wire Wire Line
-	2900 6650 4800 6650
-Wire Wire Line
-	2900 6750 4800 6750
-Wire Wire Line
-	5300 6650 5450 6650
-Wire Wire Line
-	5450 6650 5450 7350
-Wire Wire Line
-	5450 7350 2900 7350
-Wire Wire Line
-	2900 7450 5550 7450
-Wire Wire Line
-	5550 7450 5550 6550
-Wire Wire Line
-	5550 6550 5300 6550
-Wire Wire Line
-	5300 6450 5650 6450
-Wire Wire Line
-	5650 6450 5650 7550
-Wire Wire Line
-	5650 7550 2900 7550
 Wire Wire Line
 	2900 2250 4600 2250
 Wire Wire Line
 	4600 2250 4600 4400
 Wire Wire Line
 	4600 4400 2900 4400
+$Comp
+L Conn_Poncho2P_2x_20x2 XA1
+U 2 1 57CB029C
+P 7750 1400
+F 0 "XA1" H 8050 1800 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 8100 -300 60  0000 C CNN
+F 2 "" H 7750 1400 60  0000 C CNN
+F 3 "" H 7750 1400 60  0000 C CNN
+	2    7750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1100 9200 1100
+Wire Wire Line
+	7500 1200 7000 1200
+Text Label 9200 1100 2    60   ~ 0
++5V_NISO
+Text Label 7000 1200 0    60   ~ 0
+GND_NISO
+Wire Wire Line
+	8700 1900 9200 1900
+Wire Wire Line
+	8700 2000 9200 2000
+Wire Wire Line
+	7500 2100 7000 2100
+Wire Wire Line
+	8700 2100 9200 2100
+Wire Wire Line
+	7500 2200 7000 2200
+Wire Wire Line
+	8700 2200 9200 2200
+Wire Wire Line
+	8700 2300 9200 2300
+Text Label 9200 1900 2    60   ~ 0
+MISO
+Text Label 9200 2000 2    60   ~ 0
+SCLK
+Text Label 9200 2100 2    60   ~ 0
+RESET
+Text Label 9200 2200 2    60   ~ 0
+START
+Text Label 7000 2200 0    60   ~ 0
+CS/
+Text Label 7000 2100 0    60   ~ 0
+MOSI
+Text Label 9200 2300 2    60   ~ 0
+DRDY/
+Wire Wire Line
+	2900 6450 3300 6450
+Wire Wire Line
+	2900 6550 3300 6550
+Wire Wire Line
+	2900 6650 3300 6650
+Wire Wire Line
+	2900 6750 3300 6750
+Wire Wire Line
+	2900 7350 3300 7350
+Wire Wire Line
+	2900 7450 3300 7450
+Wire Wire Line
+	2900 7550 3300 7550
+Text Label 3300 6450 2    60   ~ 0
+SCLK
+Text Label 3300 6550 2    60   ~ 0
+MISO
+Text Label 3300 6650 2    60   ~ 0
+MOSI
+Text Label 3300 6750 2    60   ~ 0
+CS/
+Text Label 3300 7350 2    60   ~ 0
+START
+Text Label 3300 7450 2    60   ~ 0
+RESET
+Text Label 3300 7550 2    60   ~ 0
+DRDY/
+NoConn ~ 7500 1100
+NoConn ~ 7500 1300
+NoConn ~ 7500 1400
+NoConn ~ 7500 1500
+NoConn ~ 7500 1600
+NoConn ~ 7500 1700
+NoConn ~ 7500 1800
+NoConn ~ 7500 1900
+NoConn ~ 7500 2000
+NoConn ~ 7500 2300
+NoConn ~ 7500 2400
+NoConn ~ 7500 2500
+NoConn ~ 7500 2600
+NoConn ~ 7500 2700
+NoConn ~ 7500 2800
+NoConn ~ 7500 2900
+NoConn ~ 7500 3000
+NoConn ~ 8700 3000
+NoConn ~ 8700 2900
+NoConn ~ 8700 2800
+NoConn ~ 8700 2700
+NoConn ~ 8700 2600
+NoConn ~ 8700 2500
+NoConn ~ 8700 2400
+NoConn ~ 8700 1800
+NoConn ~ 8700 1700
+NoConn ~ 8700 1600
+NoConn ~ 8700 1500
+NoConn ~ 8700 1400
+NoConn ~ 8700 1300
+NoConn ~ 8700 1200
 $EndSCHEMATC
