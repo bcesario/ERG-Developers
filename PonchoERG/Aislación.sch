@@ -4,6 +4,82 @@ LIBS:Misc_Poncho_Grande
 LIBS:Poncho_Esqueleto
 LIBS:PonchoERG
 LIBS:power
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
 LIBS:PonchoERG-cache
 EELAYER 25 0
 EELAYER END
@@ -185,8 +261,6 @@ Text HLabel 5900 4100 2    60   Input ~ 0
 RESET1
 Text HLabel 5900 4300 2    60   Output ~ 0
 DRDY/1
-NoConn ~ 5150 4200
-NoConn ~ 4050 4200
 Wire Wire Line
 	5150 4000 5900 4000
 Wire Wire Line
@@ -385,4 +459,12 @@ Wire Notes Line
 	7650 2650 7650 2400
 Wire Notes Line
 	7650 2400 7100 2400
+Text HLabel 5900 4200 2    60   Input ~ 0
+PWDN/1
+Text HLabel 3300 4200 0    60   Output ~ 0
+PWDN/
+Wire Wire Line
+	3300 4200 4050 4200
+Wire Wire Line
+	5150 4200 5900 4200
 $EndSCHEMATC

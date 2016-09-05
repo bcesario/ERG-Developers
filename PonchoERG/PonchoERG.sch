@@ -4,6 +4,82 @@ LIBS:Misc_Poncho_Grande
 LIBS:Poncho_Esqueleto
 LIBS:PonchoERG
 LIBS:power
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
 LIBS:PonchoERG-cache
 EELAYER 25 0
 EELAYER END
@@ -65,10 +141,10 @@ F15 "IN7-" O R 2900 1950 60
 F16 "IN8+" O R 2900 2050 60 
 F17 "IN8-" O R 2900 2150 60 
 F18 "IN_REF" O R 2900 2250 60 
-F19 "OUT_DRV_RL" I R 2900 2350 60 
+F19 "BIAS_DRV" I R 2900 2350 60 
 $EndSheet
 $Sheet
-S 550  2700 2350 2900
+S 550  2700 2350 3050
 U 57BDC369
 F0 "ADS1299" 60
 F1 "ADS1299.sch" 60
@@ -89,17 +165,20 @@ F15 "IN7-" I R 2900 4100 60
 F16 "IN8+" I R 2900 4200 60 
 F17 "IN8-" I R 2900 4300 60 
 F18 "IN_REF" I R 2900 4400 60 
-F19 "OUT_DRV_RL" O R 2900 4500 60 
-F20 "DRDY/" O R 2900 4700 60 
-F21 "MISO" O R 2900 5100 60 
-F22 "MOSI" I R 2900 5200 60 
-F23 "RESET/" I R 2900 4800 60 
-F24 "START" I R 2900 4900 60 
-F25 "SCLK" I R 2900 5300 60 
-F26 "CS/" I R 2900 5400 60 
+F19 "DRDY/" O R 2900 4950 60 
+F20 "MISO" O R 2900 5400 60 
+F21 "MOSI" I R 2900 5500 60 
+F22 "RESET/" I R 2900 5050 60 
+F23 "START" I R 2900 5150 60 
+F24 "SCLK" I R 2900 5600 60 
+F25 "CS/" I R 2900 5700 60 
+F26 "PWDN/" I R 2900 5250 60 
+F27 "BIAS_DRV" O R 2900 4500 60 
+F28 "BIAS_SHD" O R 2900 4600 60 
+F29 "BIAS_ELEC" O R 2900 4700 60 
 $EndSheet
 $Sheet
-S 550  5900 2350 1750
+S 550  5900 2350 1800
 U 57BDC3A8
 F0 "AISLACIÓN" 60
 F1 "Aislación.sch" 60
@@ -107,16 +186,18 @@ F2 "MISO" I R 2900 6000 60
 F3 "MOSI" O R 2900 6100 60 
 F4 "SCLK" O R 2900 6200 60 
 F5 "CS/" O R 2900 6300 60 
-F6 "START1" I R 2900 7350 60 
-F7 "RESET1" I R 2900 7450 60 
-F8 "DRDY/1" O R 2900 7550 60 
-F9 "RESET" O R 2900 7050 60 
-F10 "START" O R 2900 6950 60 
-F11 "DRDY/" I R 2900 7150 60 
+F6 "START1" I R 2900 7450 60 
+F7 "RESET1" I R 2900 7550 60 
+F8 "DRDY/1" O R 2900 7650 60 
+F9 "RESET" O R 2900 7100 60 
+F10 "START" O R 2900 7000 60 
+F11 "DRDY/" I R 2900 7200 60 
 F12 "MISO1" O R 2900 6550 60 
 F13 "MOSI1" I R 2900 6650 60 
 F14 "SCLK1" I R 2900 6450 60 
 F15 "CS1/" I R 2900 6750 60 
+F16 "PWDN/1" I R 2900 7350 60 
+F17 "PWDN/" O R 2900 6900 60 
 $EndSheet
 Wire Wire Line
 	2900 650  3000 650 
@@ -215,47 +296,13 @@ Wire Wire Line
 Wire Wire Line
 	4500 2150 2900 2150
 Wire Wire Line
-	2900 5100 3000 5100
-Wire Wire Line
-	3000 5100 3000 6000
-Wire Wire Line
 	3000 6000 2900 6000
 Wire Wire Line
 	2900 6100 3100 6100
 Wire Wire Line
-	3100 6100 3100 5200
-Wire Wire Line
-	3100 5200 2900 5200
-Wire Wire Line
-	2900 5300 3200 5300
-Wire Wire Line
-	3200 5300 3200 6200
-Wire Wire Line
 	3200 6200 2900 6200
 Wire Wire Line
 	2900 6300 3300 6300
-Wire Wire Line
-	3300 6300 3300 5400
-Wire Wire Line
-	3300 5400 2900 5400
-Wire Wire Line
-	2900 4900 3500 4900
-Wire Wire Line
-	3500 4900 3500 6950
-Wire Wire Line
-	3500 6950 2900 6950
-Wire Wire Line
-	2900 7050 3600 7050
-Wire Wire Line
-	3600 7050 3600 4800
-Wire Wire Line
-	3600 4800 2900 4800
-Wire Wire Line
-	2900 4700 3700 4700
-Wire Wire Line
-	3700 4700 3700 7150
-Wire Wire Line
-	3700 7150 2900 7150
 Wire Wire Line
 	2900 2350 4700 2350
 Wire Wire Line
@@ -324,11 +371,11 @@ Wire Wire Line
 Wire Wire Line
 	2900 6750 3300 6750
 Wire Wire Line
-	2900 7350 3300 7350
-Wire Wire Line
 	2900 7450 3300 7450
 Wire Wire Line
 	2900 7550 3300 7550
+Wire Wire Line
+	2900 7650 3300 7650
 Text Label 3300 6450 2    60   ~ 0
 SCLK
 Text Label 3300 6550 2    60   ~ 0
@@ -337,11 +384,11 @@ Text Label 3300 6650 2    60   ~ 0
 MOSI
 Text Label 3300 6750 2    60   ~ 0
 CS/
-Text Label 3300 7350 2    60   ~ 0
-START
 Text Label 3300 7450 2    60   ~ 0
-RESET
+START
 Text Label 3300 7550 2    60   ~ 0
+RESET
+Text Label 3300 7650 2    60   ~ 0
 DRDY/
 NoConn ~ 7500 1100
 NoConn ~ 7500 1300
@@ -366,7 +413,6 @@ NoConn ~ 8700 2800
 NoConn ~ 8700 2700
 NoConn ~ 8700 2600
 NoConn ~ 8700 2500
-NoConn ~ 8700 2400
 NoConn ~ 8700 1800
 NoConn ~ 8700 1700
 NoConn ~ 8700 1600
@@ -374,4 +420,36 @@ NoConn ~ 8700 1500
 NoConn ~ 8700 1400
 NoConn ~ 8700 1300
 NoConn ~ 8700 1200
+Wire Wire Line
+	3400 6900 2900 6900
+Wire Wire Line
+	2900 7000 3500 7000
+Wire Wire Line
+	3600 7100 2900 7100
+Wire Wire Line
+	2900 7200 3700 7200
+Wire Wire Line
+	2900 7350 3300 7350
+Text Label 3300 7350 2    60   ~ 0
+PWDN/
+Wire Wire Line
+	8700 2400 9200 2400
+Text Label 9200 2400 2    60   ~ 0
+PWDN/
+Wire Wire Line
+	3000 6000 3000 5400
+Wire Wire Line
+	3000 5400 2900 5400
+Wire Wire Line
+	2900 5500 3100 5500
+Wire Wire Line
+	3100 5500 3100 6100
+Wire Wire Line
+	3200 6200 3200 5600
+Wire Wire Line
+	3200 5600 2900 5600
+Wire Wire Line
+	2900 5700 3300 5700
+Wire Wire Line
+	3300 5700 3300 6300
 $EndSCHEMATC
