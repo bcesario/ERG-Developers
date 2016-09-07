@@ -86,15 +86,26 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title "Entradas Analógicas y Protección"
+Title ""
 Date ""
-Rev "1.0"
-Comp "Bruno Javier Cesario"
+Rev ""
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L CONN_01X18 J1
+U 1 1 57BF0F9F
+P 950 1550
+F 0 "J1" H 950 2500 50  0000 C CNN
+F 1 "Entradas Analógicas" V 1050 1550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x18" H 950 1550 50  0001 C CNN
+F 3 "" H 950 1550 50  0000 C CNN
+	1    950  1550
+	-1   0    0    -1  
+$EndComp
 $Comp
 L R_Small R1
 U 1 1 57C0F7DA
@@ -625,59 +636,59 @@ F 3 "" H 1350 6450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2650 1100 2650 2200
+	2650 2200 2650 1100
 Wire Wire Line
-	950  1100 2650 1100
+	2650 1100 1150 1100
 Wire Wire Line
-	950  1200 2550 1200
+	1150 1200 2550 1200
 Wire Wire Line
 	2550 1200 2550 2300
 Wire Wire Line
-	2450 1300 2450 2400
+	2450 2400 2450 1300
 Wire Wire Line
-	950  1300 2450 1300
+	2450 1300 1150 1300
 Wire Wire Line
-	950  1400 2350 1400
+	1150 1400 2350 1400
 Wire Wire Line
 	2350 1400 2350 2500
 Wire Wire Line
-	950  1500 2250 1500
+	1150 1500 2250 1500
 Wire Wire Line
 	2250 1500 2250 3700
 Wire Wire Line
-	2150 1600 2150 3800
+	2150 3800 2150 1600
 Wire Wire Line
-	950  1600 2150 1600
+	2150 1600 1150 1600
 Wire Wire Line
-	950  1700 2050 1700
+	1150 1700 2050 1700
 Wire Wire Line
 	2050 1700 2050 3900
 Wire Wire Line
-	1950 1800 1950 4000
+	1950 4000 1950 1800
 Wire Wire Line
-	950  1800 1950 1800
+	1950 1800 1150 1800
 Wire Wire Line
 	1850 1900 1850 5200
 Wire Wire Line
-	950  1900 1850 1900
+	1850 1900 1150 1900
 Wire Wire Line
-	950  2000 1750 2000
+	1150 2000 1750 2000
 Wire Wire Line
 	1750 2000 1750 5300
 Wire Wire Line
 	1650 2100 1650 5400
 Wire Wire Line
-	950  2100 1650 2100
+	1650 2100 1150 2100
 Wire Wire Line
-	950  2200 1550 2200
+	1150 2200 1550 2200
 Wire Wire Line
 	1550 2200 1550 5500
 Wire Wire Line
-	950  2300 1250 2300
+	1150 2300 1250 2300
 Wire Wire Line
 	1250 2300 1250 6050
 Wire Wire Line
-	950  2400 1450 2400
+	1150 2400 1450 2400
 Wire Wire Line
 	1450 2400 1450 6050
 Wire Wire Line
@@ -866,13 +877,13 @@ Wire Wire Line
 	5450 7400 5450 7300
 Connection ~ 5150 7400
 Wire Wire Line
-	950  700  5000 700 
+	1150 700  5000 700 
 Wire Wire Line
-	950  800  5200 800 
+	1150 800  5200 800 
 Wire Wire Line
-	950  900  5400 900 
+	1150 900  5400 900 
 Wire Wire Line
-	950  1000 5600 1000
+	1150 1000 5600 1000
 Wire Wire Line
 	3150 1200 3150 700 
 Connection ~ 3150 700 
@@ -940,13 +951,13 @@ Connection ~ 4200 4000
 Wire Wire Line
 	3050 4950 3050 5050
 Wire Wire Line
-	2800 5050 8700 5050
+	2800 5050 3950 5050
 Wire Wire Line
 	3950 5050 3950 4950
 Wire Wire Line
 	3350 4950 3350 5100
 Wire Wire Line
-	2750 5100 8800 5100
+	2750 5100 4250 5100
 Wire Wire Line
 	4250 5100 4250 4950
 Wire Wire Line
@@ -1101,142 +1112,4 @@ F 3 "" H 2000 7100 60  0000 C CNN
 	1    2000 7100
 	-1   0    0    1   
 $EndComp
-$Comp
-L TPD2E001 U15
-U 1 1 57D06AC4
-P 9550 2850
-F 0 "U15" H 9400 3150 60  0000 C CNN
-F 1 "TPD2E001" H 9550 2550 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 9550 2850 60  0001 C CNN
-F 3 "" H 9550 2850 60  0000 C CNN
-	1    9550 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R26
-U 1 1 57D06E46
-P 10550 3700
-F 0 "R26" V 10600 3450 50  0000 L CNN
-F 1 "2.2k" V 10500 3800 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 10550 3700 50  0001 C CNN
-F 3 "" H 10550 3700 50  0000 C CNN
-	1    10550 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R25
-U 1 1 57D0710C
-P 10250 4000
-F 0 "R25" V 10300 3750 50  0000 L CNN
-F 1 "2.2k" V 10200 4100 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 10250 4000 50  0001 C CNN
-F 3 "" H 10250 4000 50  0000 C CNN
-	1    10250 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C41
-U 1 1 57D079C5
-P 9550 4400
-F 0 "C41" H 9400 4500 50  0000 L CNN
-F 1 "1nF" H 9400 4300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9588 4250 50  0001 C CNN
-F 3 "" H 9550 4400 50  0000 C CNN
-	1    9550 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L C C42
-U 1 1 57D07AE3
-P 9550 4750
-F 0 "C42" H 9400 4850 50  0000 L CNN
-F 1 "1nF" H 9400 4650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9588 4600 50  0001 C CNN
-F 3 "" H 9550 4750 50  0000 C CNN
-	1    9550 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9950 2950 10250 2950
-Wire Wire Line
-	10250 600  10250 3900
-Wire Wire Line
-	10250 4100 10250 4900
-Wire Wire Line
-	10250 4400 9700 4400
-Wire Wire Line
-	9700 4750 10550 4750
-Wire Wire Line
-	10550 3800 10550 4900
-Wire Wire Line
-	10550 550  10550 3600
-Wire Wire Line
-	10550 2750 9950 2750
-Wire Wire Line
-	8700 5050 8700 2700
-Wire Wire Line
-	8700 2700 9150 2700
-Connection ~ 3950 5050
-Wire Wire Line
-	9150 3000 8800 3000
-Wire Wire Line
-	8800 3000 8800 5100
-Connection ~ 4250 5100
-$Comp
-L Earth #PWR09
-U 1 1 57D08E33
-P 9150 4550
-F 0 "#PWR09" H 9150 4300 50  0001 C CNN
-F 1 "Earth" H 9150 4400 50  0001 C CNN
-F 2 "" H 9150 4550 50  0000 C CNN
-F 3 "" H 9150 4550 50  0000 C CNN
-	1    9150 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 4550 9250 4550
-Wire Wire Line
-	9250 4400 9250 4750
-Wire Wire Line
-	9250 4400 9400 4400
-Wire Wire Line
-	9250 4750 9400 4750
-Connection ~ 9250 4550
-Text HLabel 10250 4900 3    60   Input ~ 0
-BIAS_SHD
-Text HLabel 10550 4900 3    60   Input ~ 0
-BIAS_ELEC
-Connection ~ 10250 4400
-Connection ~ 10550 4750
-Connection ~ 10250 2950
-Connection ~ 10550 2750
-$Comp
-L CONN_01X20 J1
-U 1 1 57D115B1
-P 750 1650
-F 0 "J1" H 750 2700 50  0000 C CNN
-F 1 "Entradas Analógicas" V 850 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x20" H 750 1650 60  0001 C CNN
-F 3 "" H 750 1650 60  0000 C CNN
-	1    750  1650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	950  2500 1100 2500
-Wire Wire Line
-	1100 2500 1100 2950
-Wire Wire Line
-	950  2600 950  2800
-Wire Wire Line
-	10250 600  650  600 
-Wire Wire Line
-	650  600  650  2800
-Wire Wire Line
-	650  2800 950  2800
-Wire Wire Line
-	1100 2950 550  2950
-Wire Wire Line
-	550  2950 550  550 
-Wire Wire Line
-	550  550  10550 550 
 $EndSCHEMATC

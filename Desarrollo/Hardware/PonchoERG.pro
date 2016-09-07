@@ -1,4 +1,4 @@
-update=06/09/2016 12:59:16
+update=04/09/2016 13:32:01
 version=1
 last_client=kicad
 [cvpcb]
@@ -112,13 +112,3 @@ LibName79=C:/Program Files/KiCad/share/kicad/library/video
 LibName80=C:/Program Files/KiCad/share/kicad/library/Xicor
 LibName81=C:/Program Files/KiCad/share/kicad/library/xilinx
 LibName82=C:/Program Files/KiCad/share/kicad/library/Zilog
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60

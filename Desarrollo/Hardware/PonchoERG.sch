@@ -89,7 +89,7 @@ Sheet 1 4
 Title "Poncho Mediano - Modelo - Ejemplo - Template"
 Date "lun 05 oct 2015"
 Rev "1.0"
-Comp "Bruno Javier Cesario"
+Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
 Comment1 "https://github.com/ciaa/Ponchos/tree/master/modelos/doc"
 Comment2 "Autores y Licencia del template (Diego Brengi - UNLaM)"
 Comment3 "Autor del poncho (COMPLETAR NOMBRE Y APELLIDO). Ver directorio \"doc\""
@@ -120,30 +120,28 @@ $EndComp
 Text Notes 7350 6300 0    60   ~ 0
 Luego de abrir el nuevo proyecto:\n1)Editar datos del rótulo.\n2)Editar los archivos del subdirectorio "doc".\n2.1) Agregarse en el archivo de licencia.\n2.2) Colocar info mínima del Poncho en el LEEME.txt\n2.3) Colocar info mínima en el CAMBIOS.doc
 $Sheet
-S 550  550  2350 2000
+S 550  600  2350 1850
 U 57BDBDC8
 F0 "PROTECCIÓN" 60
 F1 "Protección.sch" 60
-F2 "IN2-" O R 2900 900 60 
-F3 "IN3+" O R 2900 1000 60 
-F4 "IN3-" O R 2900 1100 60 
-F5 "IN4+" O R 2900 1200 60 
-F6 "IN4-" O R 2900 1300 60 
-F7 "IN5+" O R 2900 1400 60 
-F8 "IN5-" O R 2900 1500 60 
-F9 "IN6+" O R 2900 1600 60 
-F10 "IN6-" O R 2900 1700 60 
-F11 "IN7+" O R 2900 1800 60 
-F12 "IN1+" O R 2900 600 60 
-F13 "IN1-" O R 2900 700 60 
-F14 "IN2+" O R 2900 800 60 
-F15 "IN7-" O R 2900 1900 60 
-F16 "IN8+" O R 2900 2000 60 
-F17 "IN8-" O R 2900 2100 60 
-F18 "IN_REF" O R 2900 2200 60 
-F19 "BIAS_DRV" I R 2900 2300 60 
-F20 "BIAS_SHD" I R 2900 2400 60 
-F21 "BIAS_ELEC" I R 2900 2500 60 
+F2 "IN2-" O R 2900 950 60 
+F3 "IN3+" O R 2900 1050 60 
+F4 "IN3-" O R 2900 1150 60 
+F5 "IN4+" O R 2900 1250 60 
+F6 "IN4-" O R 2900 1350 60 
+F7 "IN5+" O R 2900 1450 60 
+F8 "IN5-" O R 2900 1550 60 
+F9 "IN6+" O R 2900 1650 60 
+F10 "IN6-" O R 2900 1750 60 
+F11 "IN7+" O R 2900 1850 60 
+F12 "IN1+" O R 2900 650 60 
+F13 "IN1-" O R 2900 750 60 
+F14 "IN2+" O R 2900 850 60 
+F15 "IN7-" O R 2900 1950 60 
+F16 "IN8+" O R 2900 2050 60 
+F17 "IN8-" O R 2900 2150 60 
+F18 "IN_REF" O R 2900 2250 60 
+F19 "BIAS_DRV" I R 2900 2350 60 
 $EndSheet
 $Sheet
 S 550  2700 2350 3050
@@ -202,69 +200,101 @@ F16 "PWDN/1" I R 2900 7350 60
 F17 "PWDN/" O R 2900 6900 60 
 $EndSheet
 Wire Wire Line
-	3000 600  3000 2800
+	2900 650  3000 650 
+Wire Wire Line
+	3000 650  3000 2800
 Wire Wire Line
 	3000 2800 2900 2800
 Wire Wire Line
-	3100 700  3100 2900
+	2900 750  3100 750 
+Wire Wire Line
+	3100 750  3100 2900
 Wire Wire Line
 	3100 2900 2900 2900
 Wire Wire Line
-	3200 3000 2900 3000
+	2900 3000 3200 3000
 Wire Wire Line
-	3200 800  3200 3000
+	3200 3000 3200 850 
 Wire Wire Line
-	3300 900  3300 3100
+	3200 850  2900 850 
+Wire Wire Line
+	2900 950  3300 950 
+Wire Wire Line
+	3300 950  3300 3100
 Wire Wire Line
 	3300 3100 2900 3100
 Wire Wire Line
-	3400 1000 3400 3200
+	2900 1050 3400 1050
+Wire Wire Line
+	3400 1050 3400 3200
 Wire Wire Line
 	3400 3200 2900 3200
 Wire Wire Line
-	3500 1100 3500 3300
+	2900 1150 3500 1150
+Wire Wire Line
+	3500 1150 3500 3300
 Wire Wire Line
 	3500 3300 2900 3300
 Wire Wire Line
-	3600 3400 2900 3400
+	2900 3400 3600 3400
 Wire Wire Line
-	3600 1200 3600 3400
+	3600 3400 3600 1250
 Wire Wire Line
-	3700 1300 3700 3500
+	3600 1250 2900 1250
+Wire Wire Line
+	2900 1350 3700 1350
+Wire Wire Line
+	3700 1350 3700 3500
 Wire Wire Line
 	3700 3500 2900 3500
 Wire Wire Line
-	3800 3600 2900 3600
+	2900 3600 3800 3600
 Wire Wire Line
-	3800 1400 3800 3600
+	3800 3600 3800 1450
 Wire Wire Line
-	3900 1500 3900 3700
+	3800 1450 2900 1450
+Wire Wire Line
+	2900 1550 3900 1550
+Wire Wire Line
+	3900 1550 3900 3700
 Wire Wire Line
 	3900 3700 2900 3700
 Wire Wire Line
-	4000 3800 2900 3800
+	2900 3800 4000 3800
 Wire Wire Line
-	4000 1600 4000 3800
+	4000 3800 4000 1650
 Wire Wire Line
-	4100 1700 4100 3900
+	4000 1650 2900 1650
+Wire Wire Line
+	2900 1750 4100 1750
+Wire Wire Line
+	4100 1750 4100 3900
 Wire Wire Line
 	4100 3900 2900 3900
 Wire Wire Line
-	4200 1800 4200 4000
+	2900 1850 4200 1850
+Wire Wire Line
+	4200 1850 4200 4000
 Wire Wire Line
 	4200 4000 2900 4000
 Wire Wire Line
-	4300 1900 4300 4100
+	2900 1950 4300 1950
+Wire Wire Line
+	4300 1950 4300 4100
 Wire Wire Line
 	4300 4100 2900 4100
 Wire Wire Line
-	4400 4200 2900 4200
+	2900 4200 4400 4200
 Wire Wire Line
-	4400 2000 4400 4200
+	4400 4200 4400 2050
 Wire Wire Line
-	4500 4300 2900 4300
+	4400 2050 2900 2050
 Wire Wire Line
-	4500 2100 4500 4300
+	2900 4300 4500 4300
+Wire Wire Line
+	4500 4300 4500 2150
+Wire Wire Line
+	4500 2150 2900 2150
 Wire Wire Line
 	3000 6000 2900 6000
 Wire Wire Line
@@ -274,11 +304,15 @@ Wire Wire Line
 Wire Wire Line
 	2900 6300 3300 6300
 Wire Wire Line
-	4700 2300 4700 4500
+	2900 2350 4700 2350
+Wire Wire Line
+	4700 2350 4700 4500
 Wire Wire Line
 	4700 4500 2900 4500
 Wire Wire Line
-	4600 2200 4600 4400
+	2900 2250 4600 2250
+Wire Wire Line
+	4600 2250 4600 4400
 Wire Wire Line
 	4600 4400 2900 4400
 $Comp
@@ -292,9 +326,13 @@ F 3 "" H 7750 1400 60  0000 C CNN
 	2    7750 1400
 	1    0    0    -1  
 $EndComp
-Text Label 8700 1100 0    60   ~ 0
+Wire Wire Line
+	8700 1100 9200 1100
+Wire Wire Line
+	7500 1200 7000 1200
+Text Label 9200 1100 0    60   ~ 0
 +5V_NISO
-Text Label 7500 1200 2    60   ~ 0
+Text Label 7000 1200 2    60   ~ 0
 GND_NISO
 Wire Wire Line
 	8700 1900 9200 1900
@@ -430,52 +468,4 @@ Wire Wire Line
 	3700 7200 3700 4950
 Wire Wire Line
 	3700 4950 2900 4950
-Wire Wire Line
-	2900 600  3000 600 
-Wire Wire Line
-	2900 700  3100 700 
-Wire Wire Line
-	2900 800  3200 800 
-Wire Wire Line
-	2900 900  3300 900 
-Wire Wire Line
-	2900 1000 3400 1000
-Wire Wire Line
-	2900 1100 3500 1100
-Wire Wire Line
-	2900 1200 3600 1200
-Wire Wire Line
-	2900 1300 3700 1300
-Wire Wire Line
-	2900 1400 3800 1400
-Wire Wire Line
-	2900 1500 3900 1500
-Wire Wire Line
-	2900 1600 4000 1600
-Wire Wire Line
-	4100 1700 2900 1700
-Wire Wire Line
-	2900 1800 4200 1800
-Wire Wire Line
-	2900 1900 4300 1900
-Wire Wire Line
-	2900 2000 4400 2000
-Wire Wire Line
-	2900 2100 4500 2100
-Wire Wire Line
-	2900 2200 4600 2200
-Wire Wire Line
-	2900 2300 4700 2300
-Wire Wire Line
-	2900 4600 4800 4600
-Wire Wire Line
-	4800 4600 4800 2400
-Wire Wire Line
-	4800 2400 2900 2400
-Wire Wire Line
-	2900 2500 4900 2500
-Wire Wire Line
-	4900 2500 4900 4700
-Wire Wire Line
-	4900 4700 2900 4700
 $EndSCHEMATC
