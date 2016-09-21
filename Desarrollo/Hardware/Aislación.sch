@@ -126,11 +126,7 @@ F 3 "" H 2000 1950 50  0000 C CNN
 $EndComp
 Connection ~ 3800 1900
 Wire Wire Line
-	1400 1800 1400 2100
-Wire Wire Line
 	2000 2200 2000 2700
-Wire Wire Line
-	1850 2600 4100 2600
 Wire Wire Line
 	4100 2000 4000 2000
 Wire Wire Line
@@ -138,7 +134,7 @@ Wire Wire Line
 Connection ~ 4000 2600
 Text Notes 3300 1850 0    60   ~ 0
 +5V_ISO
-Text Notes 850  1850 0    60   ~ 0
+Text Notes 550  1900 0    60   ~ 0
 +3.3V_ISO
 Connection ~ 2000 2600
 Wire Wire Line
@@ -151,58 +147,38 @@ Wire Notes Line
 	3400 2500 2900 2500
 Wire Notes Line
 	2900 2500 2900 2000
-Text Notes 2700 2250 0    60   ~ 0
-SPI
+Text Notes 2350 2950 0    60   ~ 0
+SPI from ADS1299
 $Comp
 L C C33
 U 1 1 57C3A802
-P 2500 2250
-F 0 "C33" H 2525 2350 50  0000 L CNN
-F 1 "1uF" H 2525 2150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2538 2100 50  0001 C CNN
-F 3 "" H 2500 2250 50  0000 C CNN
-	1    2500 2250
+P 2550 2250
+F 0 "C33" H 2575 2350 50  0000 L CNN
+F 1 "10uF" H 2575 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2588 2100 50  0001 C CNN
+F 3 "" H 2550 2250 50  0000 C CNN
+	1    2550 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C34
 U 1 1 57C3A86F
-P 1400 2250
-F 0 "C34" H 1425 2350 50  0000 L CNN
-F 1 "1uF" H 1425 2150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 1438 2100 50  0001 C CNN
-F 3 "" H 1400 2250 50  0000 C CNN
-	1    1400 2250
+P 1050 2250
+F 0 "C34" H 1075 2350 50  0000 L CNN
+F 1 "10uF" H 1075 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1088 2100 50  0001 C CNN
+F 3 "" H 1050 2250 50  0000 C CNN
+	1    1050 2250
 	1    0    0    -1  
 $EndComp
-Connection ~ 1400 1900
 Wire Wire Line
-	2500 2100 2500 1900
-Connection ~ 2500 1900
+	5100 2100 6700 2100
 Wire Wire Line
-	2500 2400 2500 2600
-Connection ~ 2500 2600
+	5100 2200 6500 2200
 Wire Wire Line
-	1400 2600 1550 2600
+	5100 2300 6600 2300
 Wire Wire Line
-	1400 2400 1400 2700
-Connection ~ 1400 2600
-Text HLabel 5900 2400 2    60   Output ~ 0
-MISO1
-Text HLabel 5900 2300 2    60   Input ~ 0
-MOSI1
-Text HLabel 5900 2200 2    60   Input ~ 0
-SCLK1
-Text HLabel 5900 2100 2    60   Input ~ 0
-CS1/
-Wire Wire Line
-	5900 2100 5100 2100
-Wire Wire Line
-	5100 2200 5900 2200
-Wire Wire Line
-	5100 2300 5900 2300
-Wire Wire Line
-	5100 2400 5900 2400
+	5100 2400 6400 2400
 Wire Wire Line
 	5100 2600 7600 2600
 Wire Wire Line
@@ -217,7 +193,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 1900 5300 4400
 Connection ~ 5300 2500
-Text Notes 6400 2300 0    60   ~ 0
+Text Notes 5750 1950 0    60   ~ 0
 SPI to FRDM
 Text Notes 7700 2550 0    60   ~ 0
 POWER from FRDM
@@ -234,9 +210,9 @@ Wire Wire Line
 Wire Wire Line
 	3800 3800 4050 3800
 Wire Wire Line
-	4050 4500 3700 4500
+	3700 4500 4050 4500
 Wire Wire Line
-	3700 4500 3700 2600
+	3700 2600 3700 4500
 Connection ~ 3700 2600
 Wire Wire Line
 	4050 3900 3700 3900
@@ -255,18 +231,12 @@ Wire Wire Line
 	5300 4400 5150 4400
 Connection ~ 5300 3800
 Connection ~ 3800 3800
-Text HLabel 5900 4000 2    60   Input ~ 0
-START1
-Text HLabel 5900 4100 2    60   Input ~ 0
-RESET1
-Text HLabel 5900 4300 2    60   Output ~ 0
-DRDY/1
 Wire Wire Line
-	5150 4000 5900 4000
+	5150 4000 10950 4000
 Wire Wire Line
-	5900 4100 5150 4100
+	5150 4100 11050 4100
 Wire Wire Line
-	5150 4300 5900 4300
+	5150 4300 10850 4300
 Text HLabel 3300 4000 0    60   Output ~ 0
 START
 Text HLabel 3300 4100 0    60   Output ~ 0
@@ -287,10 +257,10 @@ Wire Notes Line
 	3400 4400 3400 3900
 Wire Notes Line
 	3400 3900 2900 3900
-Text Notes 2450 4200 0    60   ~ 0
-Control\nADS1299
-Text Notes 6450 4200 0    60   ~ 0
-Control\nADS1299 (from FRDM)
+Text Notes 2650 3850 0    60   ~ 0
+Control to ADS1299
+Text Notes 5450 3850 0    60   ~ 0
+Control ADS1299 from FRDM
 Wire Notes Line
 	6350 3900 5800 3900
 Wire Notes Line
@@ -339,22 +309,9 @@ Wire Wire Line
 	3800 1800 3800 4400
 Connection ~ 3800 2500
 Wire Wire Line
-	1600 1900 1400 1900
-Wire Wire Line
 	2850 800  2850 850 
 Wire Wire Line
 	2850 1350 2850 1450
-$Comp
-L R R0
-U 1 1 57C7BBDF
-P 1700 2600
-F 0 "R0" V 1600 2550 50  0000 C CNN
-F 1 "0" V 1700 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1630 2600 50  0001 C CNN
-F 3 "" H 1700 2600 50  0000 C CNN
-	1    1700 2600
-	0    1    1    0   
-$EndComp
 $Comp
 L ADuM6401-RESCUE-PonchoERG U11
 U 1 1 57C7EA7C
@@ -404,25 +361,25 @@ $EndComp
 $Comp
 L Earth #PWR034
 U 1 1 57CB1526
-P 1400 2700
-F 0 "#PWR034" H 1400 2450 50  0001 C CNN
-F 1 "Earth" H 1400 2550 50  0001 C CNN
-F 2 "" H 1400 2700 50  0000 C CNN
-F 3 "" H 1400 2700 50  0000 C CNN
-	1    1400 2700
+P 1050 2700
+F 0 "#PWR034" H 1050 2450 50  0001 C CNN
+F 1 "Earth" H 1050 2550 50  0001 C CNN
+F 2 "" H 1050 2700 50  0000 C CNN
+F 3 "" H 1050 2700 50  0000 C CNN
+	1    1050 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V-RESCUE-PonchoERG #PWR?
 U 1 1 57CB154C
-P 1400 1800
+P 1050 1800
 AR Path="/57CB154C" Ref="#PWR?"  Part="1" 
 AR Path="/57BDC3A8/57CB154C" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 1400 1650 50  0001 C CNN
-F 1 "+3.3V" H 1400 1940 50  0000 C CNN
-F 2 "" H 1400 1800 50  0000 C CNN
-F 3 "" H 1400 1800 50  0000 C CNN
-	1    1400 1800
+F 0 "#PWR035" H 1050 1650 50  0001 C CNN
+F 1 "+3.3V" H 1050 1940 50  0000 C CNN
+F 2 "" H 1050 1800 50  0000 C CNN
+F 3 "" H 1050 1800 50  0000 C CNN
+	1    1050 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -459,12 +416,152 @@ Wire Notes Line
 	7650 2650 7650 2400
 Wire Notes Line
 	7650 2400 7100 2400
-Text HLabel 5900 4200 2    60   Input ~ 0
-PWDN/1
 Text HLabel 3300 4200 0    60   Output ~ 0
 PWDN/
 Wire Wire Line
 	3300 4200 4050 4200
 Wire Wire Line
-	5150 4200 5900 4200
+	5150 4200 10750 4200
+Wire Wire Line
+	10250 2200 10750 2200
+NoConn ~ 10250 1000
+NoConn ~ 10250 1100
+NoConn ~ 10250 1200
+NoConn ~ 10250 1300
+NoConn ~ 10250 1400
+NoConn ~ 10250 1500
+NoConn ~ 10250 1600
+NoConn ~ 10250 2300
+NoConn ~ 10250 2400
+NoConn ~ 10250 2500
+NoConn ~ 10250 2600
+NoConn ~ 10250 2700
+NoConn ~ 10250 2800
+NoConn ~ 9050 2800
+NoConn ~ 9050 2700
+NoConn ~ 9050 2600
+NoConn ~ 9050 2500
+NoConn ~ 9050 2400
+NoConn ~ 9050 2300
+NoConn ~ 9050 2200
+NoConn ~ 9050 2100
+NoConn ~ 9050 1800
+NoConn ~ 9050 1700
+NoConn ~ 9050 1600
+NoConn ~ 9050 1500
+NoConn ~ 9050 1400
+NoConn ~ 9050 1300
+NoConn ~ 9050 1200
+NoConn ~ 9050 1100
+NoConn ~ 9050 900 
+Wire Wire Line
+	10250 2100 10850 2100
+Wire Wire Line
+	10250 2000 10950 2000
+Wire Wire Line
+	6700 2000 9050 2000
+Wire Wire Line
+	10250 1900 11050 1900
+Wire Wire Line
+	6600 1900 9050 1900
+Text Label 8550 1000 0    60   ~ 0
+GND_NISO
+Text Label 10750 900  2    60   ~ 0
++5V_NISO
+$Comp
+L Conn_Poncho2P_2x_20x2 XA?
+U 2 1 57D819F9
+P 9300 1200
+AR Path="/57D819F9" Ref="XA?"  Part="2" 
+AR Path="/57BDC3A8/57D819F9" Ref="XA1"  Part="2" 
+F 0 "XA1" H 9600 1600 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 9650 -500 60  0000 C CNN
+F 2 "Poncho_Esqueleto:Conn_Poncho_Izquierdo" H 9300 1200 60  0001 C CNN
+F 3 "" H 9300 1200 60  0000 C CNN
+	2    9300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1000 9050 1000
+Wire Wire Line
+	10250 900  10750 900 
+Wire Wire Line
+	2550 2100 2550 1900
+Connection ~ 2550 1900
+Wire Wire Line
+	2550 2400 2550 2600
+Connection ~ 2550 2600
+Wire Wire Line
+	2400 2000 2400 2250
+Wire Wire Line
+	2400 2250 2000 2250
+Connection ~ 2000 2250
+Wire Wire Line
+	1600 2600 4100 2600
+$Comp
+L L_Small L2
+U 1 1 57DCB3A8
+P 1500 2600
+F 0 "L2" V 1600 2550 50  0000 L CNN
+F 1 "HZ0805E601R-10" V 1450 2300 40  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 1500 2600 50  0001 C CNN
+F 3 "" H 1500 2600 50  0000 C CNN
+	1    1500 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 57DCB5DB
+P 1350 1900
+F 0 "L1" V 1450 1850 50  0000 L CNN
+F 1 "HZ0805E601R-10" V 1300 1600 40  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 1350 1900 50  0001 C CNN
+F 3 "" H 1350 1900 50  0000 C CNN
+	1    1350 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 1900 1050 1900
+Wire Wire Line
+	1050 1800 1050 2100
+Connection ~ 1050 1900
+Wire Wire Line
+	1450 1900 1600 1900
+Wire Wire Line
+	1050 2700 1050 2400
+Wire Wire Line
+	1400 2600 1050 2600
+Connection ~ 1050 2600
+Wire Notes Line
+	3400 2500 3200 2950
+Wire Notes Line
+	3200 2950 2350 2950
+Wire Wire Line
+	10750 2200 10750 4200
+Wire Wire Line
+	10850 2100 10850 4300
+Wire Wire Line
+	10950 2000 10950 4000
+Wire Wire Line
+	11050 1900 11050 4100
+Wire Wire Line
+	10250 1800 10350 1800
+Wire Wire Line
+	10350 1800 10350 3050
+Wire Wire Line
+	10350 3050 6500 3050
+Wire Wire Line
+	6500 3050 6500 2200
+Wire Wire Line
+	10250 1700 10450 1700
+Wire Wire Line
+	10450 1700 10450 3150
+Wire Wire Line
+	10450 3150 6400 3150
+Wire Wire Line
+	6400 3150 6400 2400
+Wire Wire Line
+	6600 2300 6600 1900
+Wire Wire Line
+	6700 2100 6700 2000
 $EndSCHEMATC
