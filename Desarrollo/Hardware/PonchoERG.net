@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\Bioingenieria\PROYECTO\ERG-Developers\Desarrollo\Hardware\PonchoERG.sch)
-    (date "20/09/2016 18:11:47")
+    (date "23/09/2016 19:11:38")
     (tool "Eeschema 4.0.2-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

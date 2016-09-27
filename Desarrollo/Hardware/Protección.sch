@@ -1226,17 +1226,17 @@ Wire Wire Line
 Wire Wire Line
 	1100 2500 1100 2950
 Wire Wire Line
-	950  2600 950  2800
+	950  2800 950  2600
 Wire Wire Line
-	10250 600  650  600 
+	600  600  10250 600 
 Wire Wire Line
-	650  600  650  2800
-Wire Wire Line
-	650  2800 950  2800
+	600  2800 950  2800
 Wire Wire Line
 	1100 2950 550  2950
 Wire Wire Line
 	550  2950 550  550 
 Wire Wire Line
 	550  550  10550 550 
+Wire Wire Line
+	600  2800 600  600 
 $EndSCHEMATC
