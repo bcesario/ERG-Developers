@@ -86,14 +86,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title "Poncho Mediano - Modelo - Ejemplo - Template"
+Title "Poncho de Adquisición de Biopotenciales"
 Date "lun 05 oct 2015"
 Rev "1.0"
-Comp "Bruno Javier Cesario"
-Comment1 "https://github.com/ciaa/Ponchos/tree/master/modelos/doc"
+Comp "FIUNER"
+Comment1 "https://github.com/bcesario/ERG-Developers.git"
 Comment2 "Autores y Licencia del template (Diego Brengi - UNLaM)"
-Comment3 "Autor del poncho (COMPLETAR NOMBRE Y APELLIDO). Ver directorio \"doc\""
-Comment4 "CÓDIGO PONCHO:"
+Comment3 "Bruno Javier Cesario"
+Comment4 ""
 $EndDescr
 $Comp
 L OSHWA #G2
@@ -117,8 +117,6 @@ F 3 "" H 10150 6000 60  0001 C CNN
 	1    10150 6000
 	1    0    0    -1  
 $EndComp
-Text Notes 7350 6300 0    60   ~ 0
-Luego de abrir el nuevo proyecto:\n1)Editar datos del rótulo.\n2)Editar los archivos del subdirectorio "doc".\n2.1) Agregarse en el archivo de licencia.\n2.2) Colocar info mínima del Poncho en el LEEME.txt\n2.3) Colocar info mínima en el CAMBIOS.doc
 $Sheet
 S 550  550  2350 2000
 U 57BDBDC8

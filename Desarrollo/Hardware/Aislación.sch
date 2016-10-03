@@ -86,13 +86,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title "Aislación de SPI, Control y Alimentación"
+Title "Poncho de Adquisición de Biopotenciales"
 Date ""
 Rev "1.0"
-Comp "Bruno Javier Cesario"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comp "FIUNER"
+Comment1 "https://github.com/bcesario/ERG-Developers.git"
+Comment2 "Autores y Licencia del template (Diego Brengi - UNLaM)"
+Comment3 "Bruno Javier Cesario"
 Comment4 ""
 $EndDescr
 Text HLabel 3300 2400 0    60   Input ~ 0
@@ -120,7 +120,8 @@ P 2000 1950
 F 0 "U13" H 1800 1750 50  0000 C CNN
 F 1 "NCP1117ST33T3G" H 2000 2150 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-223" H 2000 1950 50  0001 C CNN
-F 3 "" H 2000 1950 50  0000 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117LP-D.PDF" H 2000 1950 50  0001 C CNN
+F 4 "NCP1117LPST33T3GOSCT-ND" H 2000 1950 60  0001 C CNN "Código Digikey"
 	1    2000 1950
 	-1   0    0    -1  
 $EndComp
@@ -132,23 +133,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 2600
 Connection ~ 4000 2600
-Text Notes 3300 1850 0    60   ~ 0
-+5V_ISO
-Text Notes 550  1900 0    60   ~ 0
-+3.3V_ISO
 Connection ~ 2000 2600
 Wire Wire Line
 	3800 2500 4100 2500
-Wire Notes Line
-	2900 2000 3400 2000
-Wire Notes Line
-	3400 2000 3400 2500
-Wire Notes Line
-	3400 2500 2900 2500
-Wire Notes Line
-	2900 2500 2900 2000
-Text Notes 2350 2950 0    60   ~ 0
-SPI from ADS1299
 $Comp
 L C C33
 U 1 1 57C3A802
@@ -156,7 +143,7 @@ P 2550 2250
 F 0 "C33" H 2575 2350 50  0000 L CNN
 F 1 "10uF" H 2575 2150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2588 2100 50  0001 C CNN
-F 3 "" H 2550 2250 50  0000 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 2550 2250 50  0001 C CNN
 	1    2550 2250
 	1    0    0    -1  
 $EndComp
@@ -167,7 +154,7 @@ P 1050 2250
 F 0 "C34" H 1075 2350 50  0000 L CNN
 F 1 "10uF" H 1075 2150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1088 2100 50  0001 C CNN
-F 3 "" H 1050 2250 50  0000 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 1050 2250 50  0001 C CNN
 	1    1050 2250
 	1    0    0    -1  
 $EndComp
@@ -193,18 +180,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 1900 5300 4400
 Connection ~ 5300 2500
-Text Notes 5750 1950 0    60   ~ 0
-SPI to FRDM
-Text Notes 7700 2550 0    60   ~ 0
-POWER from FRDM
-Wire Notes Line
-	5800 2450 5800 2000
-Wire Notes Line
-	5800 2450 6300 2450
-Wire Notes Line
-	6300 2450 6300 2000
-Wire Notes Line
-	6300 2000 5800 2000
 Wire Wire Line
 	5300 3800 5150 3800
 Wire Wire Line
@@ -249,26 +224,6 @@ Wire Wire Line
 	4050 4100 3300 4100
 Wire Wire Line
 	3300 4300 4050 4300
-Wire Notes Line
-	2900 3900 2900 4400
-Wire Notes Line
-	2900 4400 3400 4400
-Wire Notes Line
-	3400 4400 3400 3900
-Wire Notes Line
-	3400 3900 2900 3900
-Text Notes 2650 3850 0    60   ~ 0
-Control to ADS1299
-Text Notes 5450 3850 0    60   ~ 0
-Control ADS1299 from FRDM
-Wire Notes Line
-	6350 3900 5800 3900
-Wire Notes Line
-	5800 3900 5800 4400
-Wire Notes Line
-	5800 4400 6350 4400
-Wire Notes Line
-	6350 4400 6350 3900
 $Comp
 L C C31
 U 1 1 57C3B1DA
@@ -276,7 +231,7 @@ P 2650 1100
 F 0 "C31" H 2675 1200 50  0000 L CNN
 F 1 "0.1uF" H 2675 1000 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2688 950 50  0001 C CNN
-F 3 "" H 2650 1100 50  0000 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 2650 1100 50  0001 C CNN
 	1    2650 1100
 	1    0    0    -1  
 $EndComp
@@ -287,7 +242,7 @@ P 3050 1100
 F 0 "C32" H 3075 1200 50  0000 L CNN
 F 1 "10uF" H 3075 1000 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3088 950 50  0001 C CNN
-F 3 "" H 3050 1100 50  0000 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 3050 1100 50  0001 C CNN
 	1    3050 1100
 	1    0    0    -1  
 $EndComp
@@ -321,7 +276,8 @@ AR Path="/57BDC3A8/57C7EA7C" Ref="U11"  Part="1"
 F 0 "U11" H 4200 2700 50  0000 L CNN
 F 1 "ADuM6401" H 4200 1600 50  0000 L CNN
 F 2 "SMD_Packages:SO-16-W" H 4100 2500 50  0001 C CNN
-F 3 "" H 4100 2500 50  0000 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADuM6400_6401_6402_6403_6404.pdf" H 4100 2500 50  0001 C CNN
+F 4 "ADUM6401CRWZ-ND" H 4600 2200 60  0001 C CNN "Código Digikey"
 	1    4600 2200
 	-1   0    0    -1  
 $EndComp
@@ -332,15 +288,16 @@ P 4600 4150
 F 0 "U12" H 4300 4650 60  0000 C CNN
 F 1 "ADuM2401" H 4500 3650 60  0000 C CNN
 F 2 "SMD_Packages:SO-16-W" H 4600 4150 60  0001 C CNN
-F 3 "" H 4600 4150 60  0000 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADuM2400_2401_2402.pdf" H 4600 4150 60  0001 C CNN
+F 4 "ADUM2401ARWZ-RLCT-ND" H 4600 4150 60  0001 C CNN "Código Digikey"
 	1    4600 4150
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GNDA-RESCUE-PonchoERG #PWR032
+L GNDA-RESCUE-PonchoERG #PWR031
 U 1 1 57CB14DA
 P 2000 2700
-F 0 "#PWR032" H 2000 2450 50  0001 C CNN
+F 0 "#PWR031" H 2000 2450 50  0001 C CNN
 F 1 "GNDA" H 2000 2550 50  0000 C CNN
 F 2 "" H 2000 2700 50  0000 C CNN
 F 3 "" H 2000 2700 50  0000 C CNN
@@ -348,10 +305,10 @@ F 3 "" H 2000 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDA-RESCUE-PonchoERG #PWR033
+L GNDA-RESCUE-PonchoERG #PWR032
 U 1 1 57CB1500
 P 2850 1450
-F 0 "#PWR033" H 2850 1200 50  0001 C CNN
+F 0 "#PWR032" H 2850 1200 50  0001 C CNN
 F 1 "GNDA" H 2850 1300 50  0000 C CNN
 F 2 "" H 2850 1450 50  0000 C CNN
 F 3 "" H 2850 1450 50  0000 C CNN
@@ -359,10 +316,10 @@ F 3 "" H 2850 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR034
+L Earth #PWR033
 U 1 1 57CB1526
 P 1050 2700
-F 0 "#PWR034" H 1050 2450 50  0001 C CNN
+F 0 "#PWR033" H 1050 2450 50  0001 C CNN
 F 1 "Earth" H 1050 2550 50  0001 C CNN
 F 2 "" H 1050 2700 50  0000 C CNN
 F 3 "" H 1050 2700 50  0000 C CNN
@@ -374,8 +331,8 @@ L +3.3V-RESCUE-PonchoERG #PWR?
 U 1 1 57CB154C
 P 1050 1800
 AR Path="/57CB154C" Ref="#PWR?"  Part="1" 
-AR Path="/57BDC3A8/57CB154C" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 1050 1650 50  0001 C CNN
+AR Path="/57BDC3A8/57CB154C" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 1050 1650 50  0001 C CNN
 F 1 "+3.3V" H 1050 1940 50  0000 C CNN
 F 2 "" H 1050 1800 50  0000 C CNN
 F 3 "" H 1050 1800 50  0000 C CNN
@@ -383,10 +340,10 @@ F 3 "" H 1050 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR036
+L +5V #PWR035
 U 1 1 57CB1572
 P 2850 800
-F 0 "#PWR036" H 2850 650 50  0001 C CNN
+F 0 "#PWR035" H 2850 650 50  0001 C CNN
 F 1 "+5V" H 2850 940 50  0000 C CNN
 F 2 "" H 2850 800 50  0000 C CNN
 F 3 "" H 2850 800 50  0000 C CNN
@@ -394,10 +351,10 @@ F 3 "" H 2850 800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR037
+L +5V #PWR036
 U 1 1 57CB1598
 P 3800 1800
-F 0 "#PWR037" H 3800 1650 50  0001 C CNN
+F 0 "#PWR036" H 3800 1650 50  0001 C CNN
 F 1 "+5V" H 3800 1940 50  0000 C CNN
 F 2 "" H 3800 1800 50  0000 C CNN
 F 3 "" H 3800 1800 50  0000 C CNN
@@ -408,14 +365,6 @@ Text Label 7600 2500 2    60   ~ 0
 +5V_NISO
 Text Label 7600 2600 2    60   ~ 0
 GND_NISO
-Wire Notes Line
-	7100 2400 7100 2650
-Wire Notes Line
-	7100 2650 7650 2650
-Wire Notes Line
-	7650 2650 7650 2400
-Wire Notes Line
-	7650 2400 7100 2400
 Text HLabel 3300 4200 0    60   Output ~ 0
 PWDN/
 Wire Wire Line
@@ -477,7 +426,8 @@ AR Path="/57BDC3A8/57D819F9" Ref="XA1"  Part="2"
 F 0 "XA1" H 9600 1600 60  0000 C CNN
 F 1 "Conn_Poncho2P_2x_20x2" H 9650 -500 60  0000 C CNN
 F 2 "Poncho_Esqueleto:Conn_Poncho_Izquierdo" H 9300 1200 60  0001 C CNN
-F 3 "" H 9300 1200 60  0000 C CNN
+F 3 "http://www.sullinscorp.com/drawings/78_P(N)PxCxxxLFBN-RC,_10492-H.pdf" H 9300 1200 60  0001 C CNN
+F 4 "S7123-ND" H 9300 1200 60  0001 C CNN "Código Digikey"
 	2    9300 1200
 	1    0    0    -1  
 $EndComp
@@ -492,11 +442,6 @@ Wire Wire Line
 	2550 2400 2550 2600
 Connection ~ 2550 2600
 Wire Wire Line
-	2400 2000 2400 2250
-Wire Wire Line
-	2400 2250 2000 2250
-Connection ~ 2000 2250
-Wire Wire Line
 	1600 2600 4100 2600
 $Comp
 L L_Small L2
@@ -505,7 +450,8 @@ P 1500 2600
 F 0 "L2" V 1600 2550 50  0000 L CNN
 F 1 "HZ0805E601R-10" V 1450 2300 40  0000 L CNN
 F 2 "Resistors_SMD:R_0805" H 1500 2600 50  0001 C CNN
-F 3 "" H 1500 2600 50  0000 C CNN
+F 3 "http://cdn.lairdtech.com/home/brandworld/files/Catalog_EMI%20Filtering%20&%20RF%20Inductors.pdf" H 1500 2600 50  0001 C CNN
+F 4 "240-2399-1-ND" V 1500 2600 60  0001 C CNN "Código Digikey"
 	1    1500 2600
 	0    -1   -1   0   
 $EndComp
@@ -516,7 +462,8 @@ P 1350 1900
 F 0 "L1" V 1450 1850 50  0000 L CNN
 F 1 "HZ0805E601R-10" V 1300 1600 40  0000 L CNN
 F 2 "Resistors_SMD:R_0805" H 1350 1900 50  0001 C CNN
-F 3 "" H 1350 1900 50  0000 C CNN
+F 3 "http://cdn.lairdtech.com/home/brandworld/files/Catalog_EMI%20Filtering%20&%20RF%20Inductors.pdf" H 1350 1900 50  0001 C CNN
+F 4 "240-2399-1-ND" V 1350 1900 60  0001 C CNN "Código Digikey"
 	1    1350 1900
 	0    -1   -1   0   
 $EndComp
@@ -532,10 +479,6 @@ Wire Wire Line
 Wire Wire Line
 	1400 2600 1050 2600
 Connection ~ 1050 2600
-Wire Notes Line
-	3400 2500 3200 2950
-Wire Notes Line
-	3200 2950 2350 2950
 Wire Wire Line
 	10750 2200 10750 4200
 Wire Wire Line
@@ -564,4 +507,17 @@ Wire Wire Line
 	6600 2300 6600 1900
 Wire Wire Line
 	6700 2100 6700 2000
+Text Notes 550  1900 0    60   ~ 0
++3.3V_ISO
+Text Notes 3250 1850 0    60   ~ 0
++5V_ISO
+Text Notes 3250 2750 0    60   ~ 0
+GND_ISO
+Wire Wire Line
+	1550 2250 1550 1900
+Connection ~ 1550 1900
+Wire Wire Line
+	1550 2250 2400 2250
+Wire Wire Line
+	2400 2250 2400 2000
 $EndSCHEMATC
