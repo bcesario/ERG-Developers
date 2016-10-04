@@ -1,4 +1,4 @@
-update=08/09/2016 19:46:01
+update=03/10/2016 21:26:56
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=libs/DriverLEDs
+LibName31=DriverLEDs

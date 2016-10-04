@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DriverLeds)(type KiCad)(uri "D:\\Bioingenieria\\PROYECTO\\ERG-Developers\\Desarrollo\\Extra Hardware\\footprints.pretty")(options "")(descr ""))
+)
