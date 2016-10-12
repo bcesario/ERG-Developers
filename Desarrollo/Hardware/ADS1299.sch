@@ -754,18 +754,6 @@ Text Label 4550 1550 0    60   ~ 0
 BIAS_DRV
 Text Label 1800 1350 2    60   ~ 0
 BIAS_DRV
-$Comp
-L JUMPER3 JP5
-U 1 1 57CFEB0F
-P 1650 5500
-F 0 "JP5" H 1700 5400 50  0000 L CNN
-F 1 "AVSS(-)" H 1650 5600 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1650 5500 50  0001 C CNN
-F 3 "" H 1650 5500 50  0000 C CNN
-	1    1650 5500
-	-1   0    0    1   
-$EndComp
-NoConn ~ 1900 5500
 Wire Wire Line
 	4400 2200 4600 2200
 Wire Wire Line
@@ -1150,8 +1138,6 @@ Wire Wire Line
 	1500 4750 2600 4750
 Connection ~ 1650 4750
 Wire Wire Line
-	1650 4550 1650 5400
-Wire Wire Line
 	1250 1500 1400 1500
 Wire Wire Line
 	1400 1500 1400 3150
@@ -1177,11 +1163,6 @@ Wire Wire Line
 Wire Wire Line
 	950  4750 1200 4750
 Wire Wire Line
-	1400 5500 1150 5500
-Wire Wire Line
-	1150 5500 1150 4750
-Connection ~ 1150 4750
-Wire Wire Line
 	6400 2600 6600 2600
 Wire Wire Line
 	7400 2800 7400 2850
@@ -1194,7 +1175,7 @@ Wire Wire Line
 	3250 4100 3400 4100
 Connection ~ 3950 4100
 Text Notes 850  6800 0    60   ~ 0
-JP1: programación BIAS_DRV como BIAS_ELEC (1-2)\nJP2: referencia de malla de cable EEG (si posee)\nJP3: referencia eléctrica directa a SRB1 (2-3) o por buffer (1-2)\nJP4: electrodo de referencia a SRB2 (2-3) por buffer\nJP5: alimentación partida por conector hembra entre pines 2-3 (pin3: masa; pin2: -AVSS)
+JP1: programación BIAS_DRV como BIAS_ELEC (1-2)\nJP2: referencia de malla de cable EEG (si posee)\nJP3: referencia eléctrica directa a SRB1 (2-3) o por buffer (1-2)\nJP4: electrodo de referencia a SRB2 (2-3) por buffer
 Wire Wire Line
 	3250 4100 3250 3800
 Connection ~ 3250 3800
@@ -1218,4 +1199,6 @@ Wire Wire Line
 	2900 4800 2900 4700
 Wire Wire Line
 	3100 5500 4400 5500
+Wire Wire Line
+	1650 4750 1650 4550
 $EndSCHEMATC
