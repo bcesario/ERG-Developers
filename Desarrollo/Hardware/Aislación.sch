@@ -171,14 +171,14 @@ Wire Wire Line
 Wire Wire Line
 	5200 2600 5200 2000
 Wire Wire Line
-	5200 2000 5100 2000
+	5100 2000 5900 2000
 Connection ~ 5200 2600
 Wire Wire Line
 	5100 2500 7600 2500
 Wire Wire Line
 	5100 1900 5300 1900
 Wire Wire Line
-	5300 1900 5300 4400
+	5300 1450 5300 4400
 Connection ~ 5300 2500
 Wire Wire Line
 	5300 3800 5150 3800
@@ -316,11 +316,11 @@ F 3 "" H 2850 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR033
+L DGND #PWR033
 U 1 1 57CB1526
 P 1050 2700
 F 0 "#PWR033" H 1050 2450 50  0001 C CNN
-F 1 "Earth" H 1050 2550 50  0001 C CNN
+F 1 "DGND" H 1050 2550 50  0001 C CNN
 F 2 "" H 1050 2700 50  0000 C CNN
 F 3 "" H 1050 2700 50  0000 C CNN
 	1    1050 2700
@@ -386,22 +386,12 @@ NoConn ~ 10250 2500
 NoConn ~ 10250 2600
 NoConn ~ 10250 2700
 NoConn ~ 10250 2800
-NoConn ~ 9050 2800
-NoConn ~ 9050 2700
 NoConn ~ 9050 2600
 NoConn ~ 9050 2500
 NoConn ~ 9050 2400
 NoConn ~ 9050 2300
-NoConn ~ 9050 2200
-NoConn ~ 9050 2100
-NoConn ~ 9050 1800
-NoConn ~ 9050 1700
 NoConn ~ 9050 1600
-NoConn ~ 9050 1500
-NoConn ~ 9050 1400
 NoConn ~ 9050 1300
-NoConn ~ 9050 1200
-NoConn ~ 9050 1100
 NoConn ~ 9050 900 
 Wire Wire Line
 	10250 2100 10850 2100
@@ -413,7 +403,7 @@ Wire Wire Line
 	10250 1900 11050 1900
 Wire Wire Line
 	6600 1900 9050 1900
-Text Label 8550 1000 0    60   ~ 0
+Text Label 8550 1000 2    60   ~ 0
 GND_NISO
 Text Label 10750 900  2    60   ~ 0
 +5V_NISO
@@ -520,4 +510,93 @@ Wire Wire Line
 	1550 2250 2400 2250
 Wire Wire Line
 	2400 2250 2400 2000
+Wire Wire Line
+	9050 1100 8850 1100
+Wire Wire Line
+	8850 1000 8850 2800
+Connection ~ 8850 1000
+Wire Wire Line
+	8850 1200 9050 1200
+Connection ~ 8850 1100
+Wire Wire Line
+	8850 1400 9050 1400
+Connection ~ 8850 1200
+Wire Wire Line
+	8850 1500 9050 1500
+Connection ~ 8850 1400
+Wire Wire Line
+	8850 1700 9050 1700
+Connection ~ 8850 1500
+Wire Wire Line
+	8850 1800 9050 1800
+Connection ~ 8850 1700
+Wire Wire Line
+	8850 2100 9050 2100
+Connection ~ 8850 1800
+Wire Wire Line
+	8850 2200 9050 2200
+Connection ~ 8850 2100
+Wire Wire Line
+	8850 2700 9050 2700
+Connection ~ 8850 2200
+Wire Wire Line
+	8850 2800 9050 2800
+Connection ~ 8850 2700
+$Comp
+L C C43
+U 1 1 580B6D2E
+P 5600 1650
+F 0 "C43" H 5625 1750 50  0000 L CNN
+F 1 "0.1uF" H 5625 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5638 1500 50  0001 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C44
+U 1 1 580B6F5F
+P 5900 1650
+F 0 "C44" H 5925 1750 50  0000 L CNN
+F 1 "10uF" H 5925 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5938 1500 50  0001 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 5900 1650 50  0001 C CNN
+	1    5900 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 1900
+Wire Wire Line
+	5900 2000 5900 1800
+Connection ~ 5200 2000
+Wire Wire Line
+	5600 1800 5600 2000
+Connection ~ 5600 2000
+Wire Wire Line
+	5300 1450 5900 1450
+Wire Wire Line
+	5600 1450 5600 1500
+Wire Wire Line
+	5900 1450 5900 1500
+Connection ~ 5600 1450
+$Comp
+L C C45
+U 1 1 580B8B73
+P 5650 3450
+F 0 "C45" H 5675 3550 50  0000 L CNN
+F 1 "0.1uF" H 5675 3350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5688 3300 50  0001 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 5650 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3250 5650 3250
+Wire Wire Line
+	5650 3250 5650 3300
+Connection ~ 5300 3250
+Wire Wire Line
+	5650 3600 5650 3650
+Wire Wire Line
+	5650 3650 5400 3650
+Connection ~ 5400 3650
 $EndSCHEMATC
