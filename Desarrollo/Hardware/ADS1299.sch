@@ -265,17 +265,6 @@ F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.
 	1    10100 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X04 J2
-U 1 1 57C28EAE
-P 8600 3650
-F 0 "J2" H 8600 3900 50  0000 C CNN
-F 1 "I/O's Multi Propósito" V 8700 3650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8600 3650 50  0001 C CNN
-F 3 "" H 8600 3650 50  0000 C CNN
-	1    8600 3650
-	1    0    0    -1  
-$EndComp
 Text HLabel 9500 5500 2    60   Output ~ 0
 DRDY/
 Text HLabel 9700 4300 2    60   Output ~ 0
@@ -940,11 +929,11 @@ Wire Wire Line
 Wire Wire Line
 	9400 5200 6400 5200
 Wire Wire Line
-	8400 3800 8300 3800
+	8300 3800 8550 3800
 Wire Wire Line
-	8300 3800 8300 4400
+	8300 4400 8300 3800
 Wire Wire Line
-	8400 3700 8200 3700
+	8200 3700 8550 3700
 Wire Wire Line
 	8200 3700 8200 4200
 Wire Wire Line
@@ -954,9 +943,9 @@ Wire Wire Line
 Wire Wire Line
 	8100 4100 8100 3600
 Wire Wire Line
-	8100 3600 8400 3600
+	8100 3600 8550 3600
 Wire Wire Line
-	8400 3500 8000 3500
+	8000 3500 8550 3500
 Wire Wire Line
 	8000 3500 8000 4000
 Wire Wire Line
@@ -1201,4 +1190,30 @@ Wire Wire Line
 	3100 5500 4400 5500
 Wire Wire Line
 	1650 4750 1650 4550
+$Comp
+L CONN_01X05 J2
+U 1 1 580DF4D4
+P 8750 3600
+F 0 "J2" H 8750 3900 50  0000 C CNN
+F 1 "IOs Multipropósito" V 8850 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 8750 3600 50  0001 C CNN
+F 3 "" H 8750 3600 50  0000 C CNN
+	1    8750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR031
+U 1 1 580DF5E2
+P 8450 3900
+F 0 "#PWR031" H 8450 3650 50  0001 C CNN
+F 1 "DGND" H 8450 3750 50  0001 C CNN
+F 2 "" H 8450 3900 50  0000 C CNN
+F 3 "" H 8450 3900 50  0000 C CNN
+	1    8450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3400 8450 3400
+Wire Wire Line
+	8450 3400 8450 3900
 $EndSCHEMATC
