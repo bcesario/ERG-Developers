@@ -80,6 +80,8 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:Jumpers_Config
+LIBS:Jumpers_Default
 LIBS:PonchoERG-cache
 EELAYER 25 0
 EELAYER END
@@ -279,12 +281,12 @@ Text HLabel 9700 4500 2    60   Input ~ 0
 SCLK
 Text HLabel 9700 4600 2    60   Input ~ 0
 CS/
-Text Notes 10150 4500 0    60   ~ 0
+Text Notes 10150 4500 0    60   ~ 12
 SPI
-Text Notes 3950 3700 1    60   ~ 0
+Text Notes 3950 3700 1    60   ~ 12
 Entradas Analógicas (protegidas)
 NoConn ~ 6400 4900
-Text Notes 10150 5550 0    60   ~ 0
+Text Notes 10150 5550 0    60   ~ 12
 Control
 Text HLabel 1250 1500 0    60   Input ~ 0
 IN_REF
@@ -743,6 +745,66 @@ Text Label 4550 1550 0    60   ~ 0
 BIAS_DRV
 Text Label 1800 1350 2    60   ~ 0
 BIAS_DRV
+Text Notes 2750 6250 0    47   ~ 0
+Programación BIAS_DRV como BIAS_ELEC
+$Comp
+L CONN_01X05 J2
+U 1 1 580DF4D4
+P 8750 3600
+F 0 "J2" H 8750 3900 50  0000 C CNN
+F 1 "IOs Multipropósito" V 8850 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 8750 3600 50  0001 C CNN
+F 3 "" H 8750 3600 50  0000 C CNN
+	1    8750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR031
+U 1 1 580DF5E2
+P 8450 3900
+F 0 "#PWR031" H 8450 3650 50  0001 C CNN
+F 1 "DGND" H 8450 3750 50  0000 C CNN
+F 2 "" H 8450 3900 50  0000 C CNN
+F 3 "" H 8450 3900 50  0000 C CNN
+	1    8450 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 650  5850 0    60   ~ 12
+Configuración Default (PCB)
+Text Notes 900  6150 0    60   ~ 0
+JP1
+Text Notes 900  6300 0    60   ~ 0
+JP2
+Text Notes 900  6500 0    60   ~ 0
+JP3
+Text Notes 900  6750 0    60   ~ 0
+JP4
+Text Notes 2100 6250 0    60   ~ 0
+JP1
+Text Notes 2100 6600 0    60   ~ 0
+JP2
+Text Notes 2100 7050 0    60   ~ 0
+JP3
+Text Notes 2100 7550 0    60   ~ 0
+JP4
+Text Notes 3350 5850 2    60   ~ 12
+Set de Configuración (PCB)
+Text Notes 2750 6100 0    47   ~ 9
+No Conectado (Default)
+Text Notes 2750 6400 0    47   ~ 0
+Programación interna BIAS
+Text Notes 2750 6550 0    47   ~ 9
+No Conectado (Default)
+Text Notes 2750 6700 0    47   ~ 0
+Conexión malla (shield) cable paciente
+Text Notes 2750 6950 0    47   ~ 9
+IN_REF directo SRB1 (Default)
+Text Notes 2750 7150 0    47   ~ 0
+IN_REF a SRB1 por buffer
+Text Notes 2750 7450 0    47   ~ 9
+IN_REF por buffer (Default)
+Text Notes 2750 7650 0    47   ~ 0
+Indistinto
 Wire Wire Line
 	4400 2200 4600 2200
 Wire Wire Line
@@ -1004,8 +1066,6 @@ Wire Notes Line
 Wire Notes Line
 	10100 5300 10100 5800
 Wire Wire Line
-	6550 2300 6400 2300
-Wire Wire Line
 	6550 1550 6450 1550
 Wire Wire Line
 	6000 1550 6000 1700
@@ -1163,8 +1223,6 @@ Connection ~ 4400 4100
 Wire Wire Line
 	3250 4100 3400 4100
 Connection ~ 3950 4100
-Text Notes 850  6800 0    60   ~ 0
-JP1: programación BIAS_DRV como BIAS_ELEC (1-2)\nJP2: referencia de malla de cable EEG (si posee)\nJP3: referencia eléctrica directa a SRB1 (2-3) o por buffer (1-2)\nJP4: electrodo de referencia a SRB2 (2-3) por buffer
 Wire Wire Line
 	3250 4100 3250 3800
 Connection ~ 3250 3800
@@ -1190,30 +1248,70 @@ Wire Wire Line
 	3100 5500 4400 5500
 Wire Wire Line
 	1650 4750 1650 4550
-$Comp
-L CONN_01X05 J2
-U 1 1 580DF4D4
-P 8750 3600
-F 0 "J2" H 8750 3900 50  0000 C CNN
-F 1 "IOs Multipropósito" V 8850 3600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 8750 3600 50  0001 C CNN
-F 3 "" H 8750 3600 50  0000 C CNN
-	1    8750 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L DGND #PWR031
-U 1 1 580DF5E2
-P 8450 3900
-F 0 "#PWR031" H 8450 3650 50  0001 C CNN
-F 1 "DGND" H 8450 3750 50  0000 C CNN
-F 2 "" H 8450 3900 50  0000 C CNN
-F 3 "" H 8450 3900 50  0000 C CNN
-	1    8450 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 3400 8450 3400
 Wire Wire Line
 	8450 3400 8450 3900
+Wire Wire Line
+	6550 2300 6400 2300
+$Comp
+L J_STD Jumper_STD1
+U 1 1 58141C37
+P 1300 6400
+F 0 "Jumper_STD1" H 1300 5987 60  0001 C CNN
+F 1 "J_STD" H 1300 6813 60  0001 C CNN
+F 2 "footprints:Jumpers_Default" H 1300 6400 60  0001 C CNN
+F 3 "" H 1300 6400 60  0000 C CNN
+	1    1300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L J_CFG Jumper_Config1
+U 1 1 58141C89
+P 2550 6850
+F 0 "Jumper_Config1" H 2550 5930 60  0001 C CNN
+F 1 "J_CFG" H 2550 7770 60  0001 C CNN
+F 2 "footprints:Jumpers_Default" H 2550 6850 60  0001 C CNN
+F 3 "" H 2550 6850 60  0000 C CNN
+	1    2550 6850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2100 5900 3350 5900
+Wire Notes Line
+	650  5900 1950 5900
+Text Notes 5450 7150 0    60   ~ 12
+JP4
+Text Notes 6050 7150 0    60   ~ 12
+JP3
+Text Notes 5350 7350 0    60   ~ 0
+Indistinto
+Text Notes 6050 7350 0    60   ~ 0
+2-3
+Text Notes 6050 7600 0    60   ~ 0
+1-2
+Text Notes 5450 7600 0    60   ~ 0
+2-3
+Text Notes 4850 7600 0    60   ~ 12
+Buffer
+Text Notes 4800 7350 0    60   ~ 12
+Sin Buffer
+Wire Notes Line
+	4700 7200 6400 7200
+Wire Notes Line
+	6400 7000 6400 7700
+Wire Notes Line
+	6400 7700 4700 7700
+Wire Notes Line
+	4700 7700 4700 7200
+Wire Notes Line
+	4700 7450 6400 7450
+Wire Notes Line
+	5300 7700 5300 7000
+Wire Notes Line
+	5300 7000 6400 7000
+Wire Notes Line
+	5850 7000 5850 7700
+Text Notes 5000 6900 0    60   ~ 12
+Configuración JP3-JP4
 $EndSCHEMATC

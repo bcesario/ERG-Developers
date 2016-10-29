@@ -80,6 +80,8 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:Jumpers_Config
+LIBS:Jumpers_Default
 LIBS:PonchoERG-cache
 EELAYER 25 0
 EELAYER END
@@ -193,7 +195,7 @@ Wire Wire Line
 	4050 3900 3700 3900
 Connection ~ 3700 3900
 Wire Wire Line
-	5150 3900 5400 3900
+	5400 3900 5150 3900
 Wire Wire Line
 	5400 2600 5400 4500
 Connection ~ 5400 2600
@@ -305,10 +307,10 @@ F 3 "" H 1050 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DGND #PWR034
+L DGND #PWR033
 U 1 1 57CB1526
 P 2000 2700
-F 0 "#PWR034" H 2000 2450 50  0001 C CNN
+F 0 "#PWR033" H 2000 2450 50  0001 C CNN
 F 1 "DGND" H 2000 2550 50  0000 C CNN
 F 2 "" H 2000 2700 50  0000 C CNN
 F 3 "" H 2000 2700 50  0000 C CNN
@@ -320,8 +322,8 @@ L +3.3V-RESCUE-PonchoERG #PWR?
 U 1 1 57CB154C
 P 1050 1800
 AR Path="/57CB154C" Ref="#PWR?"  Part="1" 
-AR Path="/57BDC3A8/57CB154C" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 1050 1650 50  0001 C CNN
+AR Path="/57BDC3A8/57CB154C" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 1050 1650 50  0001 C CNN
 F 1 "+3.3V" H 1050 1940 50  0000 C CNN
 F 2 "" H 1050 1800 50  0000 C CNN
 F 3 "" H 1050 1800 50  0000 C CNN
@@ -329,10 +331,10 @@ F 3 "" H 1050 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR036
+L +5V #PWR035
 U 1 1 57CB1572
 P 2850 800
-F 0 "#PWR036" H 2850 650 50  0001 C CNN
+F 0 "#PWR035" H 2850 650 50  0001 C CNN
 F 1 "+5V" H 2850 940 50  0000 C CNN
 F 2 "" H 2850 800 50  0000 C CNN
 F 3 "" H 2850 800 50  0000 C CNN
@@ -340,10 +342,10 @@ F 3 "" H 2850 800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR037
+L +5V #PWR036
 U 1 1 57CB1598
 P 3800 1800
-F 0 "#PWR037" H 3800 1650 50  0001 C CNN
+F 0 "#PWR036" H 3800 1650 50  0001 C CNN
 F 1 "+5V" H 3800 1940 50  0000 C CNN
 F 2 "" H 3800 1800 50  0000 C CNN
 F 3 "" H 3800 1800 50  0000 C CNN
@@ -418,7 +420,7 @@ Wire Wire Line
 	2550 2100 2550 1900
 Connection ~ 2550 1900
 Wire Wire Line
-	2550 2400 2550 2600
+	2550 2600 2550 2400
 Connection ~ 2550 2600
 Wire Wire Line
 	1600 2600 4100 2600
@@ -454,7 +456,7 @@ Connection ~ 1050 1900
 Wire Wire Line
 	1450 1900 1600 1900
 Wire Wire Line
-	1050 2700 1050 2400
+	1050 2400 1050 2700
 Wire Wire Line
 	1400 2600 1050 2600
 Connection ~ 1050 2600
@@ -679,10 +681,10 @@ F 3 "PCB HOLE" H 6500 5700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDA #PWR038
+L GNDA #PWR037
 U 1 1 580D729E
 P 6800 6100
-F 0 "#PWR038" H 6800 6100 40  0001 C CNN
+F 0 "#PWR037" H 6800 6100 40  0001 C CNN
 F 1 "GNDA" H 6800 6030 40  0000 C CNN
 F 2 "" H 6800 6100 60  0000 C CNN
 F 3 "" H 6800 6100 60  0000 C CNN
@@ -789,14 +791,60 @@ ADS1299
 Text Label 7800 6100 2    60   ~ 0
 GND_NISO
 $Comp
-L DGND #PWR?
+L DGND #PWR038
 U 1 1 580E54E8
 P 2850 1450
-F 0 "#PWR?" H 2850 1200 50  0001 C CNN
+F 0 "#PWR038" H 2850 1200 50  0001 C CNN
 F 1 "DGND" H 2850 1300 50  0000 C CNN
 F 2 "" H 2850 1450 50  0000 C CNN
 F 3 "" H 2850 1450 50  0000 C CNN
 	1    2850 1450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Fiducial Slot_1
+U 1 1 5813B1F6
+P 4600 1400
+F 0 "Slot_1" H 4600 1600 60  0000 C CNN
+F 1 "Fiducial" H 4600 1200 60  0001 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 4600 1400 60  0001 C CNN
+F 3 "" H 4600 1400 60  0000 C CNN
+	1    4600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fiducial Slot_2
+U 1 1 5813B95D
+P 4600 5050
+F 0 "Slot_2" H 4600 5250 60  0000 C CNN
+F 1 "Slot_2" H 4600 4850 60  0001 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 4600 5050 60  0001 C CNN
+F 3 "" H 4600 5050 60  0000 C CNN
+	1    4600 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 5950 3650 0    60   ~ 12
+In PCB:\nThe total lead length between both ends\nof the capacitor and the input power supply\npin should not exceed 20 mm
+Wire Notes Line
+	5400 1850 6150 1850
+Wire Notes Line
+	5400 950  7500 950 
+Wire Notes Line
+	7500 950  7500 1400
+Wire Notes Line
+	5400 950  5400 1850
+Wire Notes Line
+	7500 1400 6150 1400
+Wire Notes Line
+	6150 1400 6150 1850
+Text Notes 5450 1350 0    60   ~ 12
+In PCB:\nThe total lead length between the ends of\nthe low ESR capacitor and the input power\nsupply pin must not exceed 2 mm.
+Wire Notes Line
+	5500 3200 8100 3200
+Wire Notes Line
+	8100 3200 8100 3750
+Wire Notes Line
+	8100 3750 5500 3750
+Wire Notes Line
+	5500 3750 5500 3200
 $EndSCHEMATC

@@ -80,6 +80,8 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:Jumpers_Config
+LIBS:Jumpers_Default
 LIBS:PonchoERG-cache
 EELAYER 25 0
 EELAYER END

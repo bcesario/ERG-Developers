@@ -1,4 +1,4 @@
-update=06/09/2016 12:59:16
+update=28/10/2016 19:19:53
 version=1
 last_client=kicad
 [cvpcb]
@@ -26,6 +26,16 @@ BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../../kicad/libModelos;../../kicad/libPonchos
@@ -112,13 +122,5 @@ LibName79=C:/Program Files/KiCad/share/kicad/library/video
 LibName80=C:/Program Files/KiCad/share/kicad/library/Xicor
 LibName81=C:/Program Files/KiCad/share/kicad/library/xilinx
 LibName82=C:/Program Files/KiCad/share/kicad/library/Zilog
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName83=libs/Jumpers_Config
+LibName84=libs/Jumpers_Default
