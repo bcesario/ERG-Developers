@@ -407,8 +407,8 @@ AR Path="/57BDC3A8/57D819F9" Ref="XA1"  Part="2"
 F 0 "XA1" H 9600 1600 60  0000 C CNN
 F 1 "Conn_Poncho2P_2x_20x2" H 9650 -500 60  0000 C CNN
 F 2 "Poncho_Esqueleto:Conn_Poncho_Izquierdo" H 9300 1200 60  0001 C CNN
-F 3 "http://www.sullinscorp.com/drawings/78_P(N)PxCxxxLFBN-RC,_10492-H.pdf" H 9300 1200 60  0001 C CNN
-F 4 "S7123-ND" H 9300 1200 60  0001 C CNN "Código Digikey"
+F 3 "https://media.digikey.com/PDF/Data%20Sheets/Sullins%20PDFs/xRxCzzzDxxN-RC_11636-B.pdf" H 9300 1200 60  0001 C CNN
+F 4 "S2011EC-20-ND" H 9300 1200 60  0001 C CNN "Código Digikey"
 	2    9300 1200
 	1    0    0    -1  
 $EndComp
@@ -541,6 +541,7 @@ F 0 "C43" H 5625 1750 50  0000 L CNN
 F 1 "0.1uF" H 5625 1550 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 5638 1500 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 5600 1650 50  0001 C CNN
+F 4 "399-1170-1-ND" H 5600 1650 60  0001 C CNN "Código Digikey"
 	1    5600 1650
 	1    0    0    -1  
 $EndComp
@@ -552,6 +553,7 @@ F 0 "C44" H 5925 1750 50  0000 L CNN
 F 1 "10uF" H 5925 1550 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 5938 1500 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 5900 1650 50  0001 C CNN
+F 4 "399-8012-1-ND" H 5900 1650 60  0001 C CNN "Código Digikey"
 	1    5900 1650
 	1    0    0    -1  
 $EndComp
@@ -577,6 +579,7 @@ F 0 "C45" H 5675 3550 50  0000 L CNN
 F 1 "0.1uF" H 5675 3350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 5688 3300 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 5650 3450 50  0001 C CNN
+F 4 "399-1170-1-ND" H 5650 3450 60  0001 C CNN "Código Digikey"
 	1    5650 3450
 	1    0    0    -1  
 $EndComp
@@ -597,7 +600,7 @@ P 9200 4900
 F 0 "FD1" H 9200 5100 60  0000 C CNN
 F 1 "Fiducial" H 9200 4700 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9200 4900 60  0001 C CNN
-F 3 "" H 9200 4900 60  0000 C CNN
+F 3 "NONE" H 9200 4900 60  0001 C CNN
 	1    9200 4900
 	1    0    0    -1  
 $EndComp
@@ -608,7 +611,7 @@ P 9700 4900
 F 0 "FD2" H 9700 5100 60  0000 C CNN
 F 1 "Fiducial" H 9700 4700 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9700 4900 60  0001 C CNN
-F 3 "" H 9700 4900 60  0000 C CNN
+F 3 "NONE" H 9700 4900 60  0001 C CNN
 	1    9700 4900
 	1    0    0    -1  
 $EndComp
@@ -619,7 +622,7 @@ P 10200 4900
 F 0 "FD3" H 10200 5100 60  0000 C CNN
 F 1 "Fiducial" H 10200 4700 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10200 4900 60  0001 C CNN
-F 3 "" H 10200 4900 60  0000 C CNN
+F 3 "NONE" H 10200 4900 60  0001 C CNN
 	1    10200 4900
 	1    0    0    -1  
 $EndComp
@@ -630,7 +633,7 @@ P 10700 4900
 F 0 "FD4" H 10700 5100 60  0000 C CNN
 F 1 "Fiducial" H 10700 4700 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10700 4900 60  0001 C CNN
-F 3 "" H 10700 4900 60  0000 C CNN
+F 3 "NONE" H 10700 4900 60  0001 C CNN
 	1    10700 4900
 	1    0    0    -1  
 $EndComp
@@ -643,7 +646,7 @@ P 7050 5550
 F 0 "MH2" H 7000 5700 60  0000 C CNN
 F 1 "PCB_HOLE" H 7050 5450 60  0001 C CNN
 F 2 "Connect:1pin" H 6900 5600 60  0001 C CNN
-F 3 "PCB HOLE" H 7000 5700 60  0001 C CNN
+F 3 "NONE" H 7000 5700 60  0001 C CNN
 	1    7050 5550
 	1    0    0    -1  
 $EndComp
@@ -654,7 +657,7 @@ P 7550 5550
 F 0 "MH3" H 7500 5700 60  0000 C CNN
 F 1 "PCB_HOLE" H 7550 5450 60  0001 C CNN
 F 2 "Connect:1pin" H 7400 5600 60  0001 C CNN
-F 3 "PCB HOLE" H 7500 5700 60  0001 C CNN
+F 3 "NONE" H 7500 5700 60  0001 C CNN
 	1    7550 5550
 	1    0    0    -1  
 $EndComp
@@ -665,7 +668,7 @@ P 8050 5550
 F 0 "MH4" H 8000 5700 60  0000 C CNN
 F 1 "PCB_HOLE" H 8050 5450 60  0001 C CNN
 F 2 "Connect:1pin" H 7900 5600 60  0001 C CNN
-F 3 "PCB HOLE" H 8000 5700 60  0001 C CNN
+F 3 "NONE" H 8000 5700 60  0001 C CNN
 	1    8050 5550
 	1    0    0    -1  
 $EndComp
@@ -676,7 +679,7 @@ P 6550 5550
 F 0 "MH1" H 6500 5700 60  0000 C CNN
 F 1 "PCB_HOLE" H 6550 5450 60  0001 C CNN
 F 2 "Connect:1pin" H 6400 5600 60  0001 C CNN
-F 3 "PCB HOLE" H 6500 5700 60  0001 C CNN
+F 3 "NONE" H 6500 5700 60  0001 C CNN
 	1    6550 5550
 	1    0    0    -1  
 $EndComp
@@ -716,7 +719,7 @@ P 9950 6200
 F 0 "FD9" H 9950 6400 60  0000 C CNN
 F 1 "Fiducial" H 9950 6000 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9950 6200 60  0001 C CNN
-F 3 "" H 9950 6200 60  0000 C CNN
+F 3 "NONE" H 9950 6200 60  0001 C CNN
 	1    9950 6200
 	1    0    0    -1  
 $EndComp
@@ -727,7 +730,7 @@ P 9200 5550
 F 0 "FD5" H 9200 5750 60  0000 C CNN
 F 1 "Fiducial" H 9200 5350 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9200 5550 60  0001 C CNN
-F 3 "" H 9200 5550 60  0000 C CNN
+F 3 "NONE" H 9200 5550 60  0001 C CNN
 	1    9200 5550
 	1    0    0    -1  
 $EndComp
@@ -738,7 +741,7 @@ P 9700 5550
 F 0 "FD6" H 9700 5750 60  0000 C CNN
 F 1 "Fiducial" H 9700 5350 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 9700 5550 60  0001 C CNN
-F 3 "" H 9700 5550 60  0000 C CNN
+F 3 "NONE" H 9700 5550 60  0001 C CNN
 	1    9700 5550
 	1    0    0    -1  
 $EndComp
@@ -749,7 +752,7 @@ P 10200 5550
 F 0 "FD7" H 10200 5750 60  0000 C CNN
 F 1 "Fiducial" H 10200 5350 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10200 5550 60  0001 C CNN
-F 3 "" H 10200 5550 60  0000 C CNN
+F 3 "NONE" H 10200 5550 60  0001 C CNN
 	1    10200 5550
 	1    0    0    -1  
 $EndComp
@@ -760,7 +763,7 @@ P 10700 5550
 F 0 "FD8" H 10700 5750 60  0000 C CNN
 F 1 "Fiducial" H 10700 5350 60  0000 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 10700 5550 60  0001 C CNN
-F 3 "" H 10700 5550 60  0000 C CNN
+F 3 "NONE" H 10700 5550 60  0001 C CNN
 	1    10700 5550
 	1    0    0    -1  
 $EndComp
@@ -802,49 +805,32 @@ F 3 "" H 2450 1400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fiducial Slot_1
-U 1 1 5813B1F6
-P 4600 1400
-F 0 "Slot_1" H 4600 1600 60  0000 C CNN
-F 1 "Fiducial" H 4600 1200 60  0001 C CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 4600 1400 60  0001 C CNN
-F 3 "" H 4600 1400 60  0000 C CNN
-	1    4600 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Fiducial Slot_2
+L Fiducial SC_2
 U 1 1 5813B95D
 P 4600 5050
-F 0 "Slot_2" H 4600 5250 60  0000 C CNN
+F 0 "SC_2" H 4600 5250 60  0000 C CNN
 F 1 "Slot_2" H 4600 4850 60  0001 C CNN
 F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 4600 5050 60  0001 C CNN
-F 3 "" H 4600 5050 60  0000 C CNN
+F 3 "NONE" H 4600 5050 60  0001 C CNN
 	1    4600 5050
 	1    0    0    -1  
 $EndComp
-Text Notes 5950 3650 0    60   ~ 12
-In PCB:\nThe total lead length between both ends\nof the capacitor and the input power supply\npin should not exceed 20 mm
 Wire Notes Line
 	5400 1850 6150 1850
 Wire Notes Line
-	5400 950  7500 950 
-Wire Notes Line
-	7500 950  7500 1400
+	5400 950  7800 950 
 Wire Notes Line
 	5400 950  5400 1850
 Wire Notes Line
-	7500 1400 6150 1400
+	6150 1400 7800 1400
 Wire Notes Line
-	6150 1400 6150 1850
+	6150 1850 6150 1400
 Text Notes 5450 1350 0    60   ~ 12
-In PCB:\nThe total lead length between the ends of\nthe low ESR capacitor and the input power\nsupply pin must not exceed 2 mm.
+En diseño PCB:\nLa distancia de separación entre ambos pads del\ncapacitor C43 y las entradas de alimentación del\nADuM6401 no debe exceder los 2 mm.
 Wire Notes Line
-	5500 3200 8100 3200
+	5500 3200 8300 3200
 Wire Notes Line
-	8100 3200 8100 3750
-Wire Notes Line
-	8100 3750 5500 3750
+	5500 3750 8300 3750
 Wire Notes Line
 	5500 3750 5500 3200
 Text Notes 4250 5100 2    60   ~ 0
@@ -863,4 +849,21 @@ Wire Notes Line
 	4350 5250 4850 5250
 Wire Notes Line
 	4850 5250 4850 4600
+$Comp
+L Fiducial SC_1
+U 1 1 58163B71
+P 4600 1450
+F 0 "SC_1" H 4600 1650 60  0000 C CNN
+F 1 "Slot_1" H 4600 1250 60  0001 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 4600 1450 60  0001 C CNN
+F 3 "NONE" H 4600 1450 60  0001 C CNN
+	1    4600 1450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7800 1400 7800 950 
+Text Notes 5950 3650 0    60   ~ 12
+En diseño PCB:\nLa distancia de separación entre ambos pads del\ncapacitor C45 y la entrada de alimentación del\nADuM2401 no debe exceder los 20 mm.
+Wire Notes Line
+	8300 3750 8300 3200
 $EndSCHEMATC

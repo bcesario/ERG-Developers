@@ -151,6 +151,7 @@ F 0 "C19" H 2700 4650 50  0000 L CNN
 F 1 "0.1uF" H 2650 4450 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2938 4400 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 2900 4550 50  0001 C CNN
+F 4 "399-1170-1-ND" H 2900 4550 60  0001 C CNN "Código Digikey"
 	1    2900 4550
 	1    0    0    -1  
 $EndComp
@@ -162,6 +163,7 @@ F 0 "C20" H 3125 4650 50  0000 L CNN
 F 1 "10uF" H 3125 4450 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3138 4400 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 3100 4550 50  0001 C CNN
+F 4 "399-8012-1-ND" H 3100 4550 60  0001 C CNN "Código Digikey"
 	1    3100 4550
 	1    0    0    -1  
 $EndComp
@@ -173,6 +175,7 @@ F 0 "C21" H 3425 5350 50  0000 L CNN
 F 1 "1uF" H 3425 5150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3438 5100 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 3400 5250 50  0001 C CNN
+F 4 "399-1284-1-ND" H 3400 5250 60  0001 C CNN "Código Digikey"
 	1    3400 5250
 	-1   0    0    -1  
 $EndComp
@@ -184,6 +187,7 @@ F 0 "C23" H 3925 5350 50  0000 L CNN
 F 1 "1uF" H 3925 5150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3938 5100 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 3900 5250 50  0001 C CNN
+F 4 "399-1284-1-ND" H 3900 5250 60  0001 C CNN "Código Digikey"
 	1    3900 5250
 	1    0    0    -1  
 $EndComp
@@ -195,6 +199,7 @@ F 0 "C22" H 3625 5350 50  0000 L CNN
 F 1 "100uF" H 3625 5150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206" H 3638 5100 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 3600 5250 50  0001 C CNN
+F 4 "399-11631-1-ND" H 3600 5250 60  0001 C CNN "Código Digikey"
 	1    3600 5250
 	1    0    0    -1  
 $EndComp
@@ -209,6 +214,7 @@ F 0 "C24" H 7625 3450 50  0000 L CNN
 F 1 "0.1uF" H 7625 3250 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 7638 3200 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 7600 3350 50  0001 C CNN
+F 4 "399-1170-1-ND" H 7600 3350 60  0001 C CNN "Código Digikey"
 	1    7600 3350
 	1    0    0    -1  
 $EndComp
@@ -220,6 +226,7 @@ F 0 "C25" H 7925 3450 50  0000 L CNN
 F 1 "1uF" H 7925 3250 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 7938 3200 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 7900 3350 50  0001 C CNN
+F 4 "399-1284-1-ND" H 7900 3350 60  0001 C CNN "Código Digikey"
 	1    7900 3350
 	1    0    0    -1  
 $EndComp
@@ -231,6 +238,7 @@ F 0 "C26" H 8825 2500 50  0000 L CNN
 F 1 "0.1uF" H 8825 2300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 8838 2250 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 8800 2400 50  0001 C CNN
+F 4 "399-1170-1-ND" H 8800 2400 60  0001 C CNN "Código Digikey"
 	1    8800 2400
 	1    0    0    -1  
 $EndComp
@@ -242,6 +250,7 @@ F 0 "C27" H 9225 2500 50  0000 L CNN
 F 1 "1uF" H 9225 2300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 9238 2250 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 9200 2400 50  0001 C CNN
+F 4 "399-1284-1-ND" H 9200 2400 60  0001 C CNN "Código Digikey"
 	1    9200 2400
 	1    0    0    -1  
 $EndComp
@@ -253,6 +262,7 @@ F 0 "C28" H 9725 2500 50  0000 L CNN
 F 1 "0.1uF" H 9725 2300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 9738 2250 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 9700 2400 50  0001 C CNN
+F 4 "399-1170-1-ND" H 9700 2400 60  0001 C CNN "Código Digikey"
 	1    9700 2400
 	1    0    0    -1  
 $EndComp
@@ -264,6 +274,7 @@ F 0 "C29" H 10125 2500 50  0000 L CNN
 F 1 "1uF" H 10125 2300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 10138 2250 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 10100 2400 50  0001 C CNN
+F 4 "399-1284-1-ND" H 10100 2400 60  0001 C CNN "Código Digikey"
 	1    10100 2400
 	1    0    0    -1  
 $EndComp
@@ -493,6 +504,7 @@ F 0 "C35" H 5500 1900 50  0000 L CNN
 F 1 "0.01uF" H 5400 1700 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 5738 1650 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 5700 1800 50  0001 C CNN
+F 4 "399-1158-1-ND" H 5700 1800 60  0001 C CNN "Código Digikey"
 	1    5700 1800
 	1    0    0    -1  
 $EndComp
@@ -503,7 +515,8 @@ P 4750 1150
 F 0 "JP2" H 4750 1300 50  0000 C CNN
 F 1 "JUMPER" H 4750 1070 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4750 1150 50  0001 C CNN
-F 3 "" H 4750 1150 50  0000 C CNN
+F 3 "http://multimedia.3m.com/mws/media/548112O/3mtm-pin-strip-header-ts2181.pdf" H 4750 1150 50  0001 C CNN
+F 4 "3M9455-ND" H 4750 1150 60  0001 C CNN "Código Digikey"
 	1    4750 1150
 	1    0    0    -1  
 $EndComp
@@ -514,7 +527,8 @@ P 5550 1300
 F 0 "JP1" H 5600 1200 50  0000 L CNN
 F 1 "JUMPER3" H 5550 1400 50  0000 C BNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 5550 1300 50  0001 C CNN
-F 3 "" H 5550 1300 50  0000 C CNN
+F 3 "http://multimedia.3m.com/mws/media/548112O/3mtm-pin-strip-header-ts2181.pdf" H 5550 1300 50  0001 C CNN
+F 4 "3M9455-ND" H 5550 1300 60  0001 C CNN "Código Digikey"
 	1    5550 1300
 	1    0    0    -1  
 $EndComp
@@ -562,6 +576,7 @@ F 0 "C36" H 3100 850 50  0000 L CNN
 F 1 "1uF" H 3150 650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3338 600 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 3300 750 50  0001 C CNN
+F 4 "399-1284-1-ND" H 3300 750 60  0001 C CNN "Código Digikey"
 	1    3300 750 
 	0    1    1    0   
 $EndComp
@@ -573,6 +588,7 @@ F 0 "C37" H 3400 1850 50  0000 L CNN
 F 1 "1uF" H 3400 1650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3338 1600 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 3300 1750 50  0001 C CNN
+F 4 "399-1284-1-ND" H 3300 1750 60  0001 C CNN "Código Digikey"
 	1    3300 1750
 	0    1    1    0   
 $EndComp
@@ -607,7 +623,8 @@ P 2400 3800
 F 0 "JP3" H 2450 3700 50  0000 L CNN
 F 1 "JUMPER3" H 2400 3900 50  0000 C BNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2400 3800 50  0001 C CNN
-F 3 "" H 2400 3800 50  0000 C CNN
+F 3 "http://multimedia.3m.com/mws/media/548112O/3mtm-pin-strip-header-ts2181.pdf" H 2400 3800 50  0001 C CNN
+F 4 "3M9455-ND" H 2400 3800 60  0001 C CNN "Código Digikey"
 	1    2400 3800
 	0    -1   -1   0   
 $EndComp
@@ -643,6 +660,7 @@ F 0 "C38" H 3350 4200 50  0000 L CNN
 F 1 "1nF" H 3400 4000 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3588 3950 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 3550 4100 50  0001 C CNN
+F 4 "399-1147-1-ND" H 3550 4100 60  0001 C CNN "Código Digikey"
 	1    3550 4100
 	0    -1   -1   0   
 $EndComp
@@ -676,7 +694,8 @@ P 850 4150
 F 0 "JP4" H 900 4050 50  0000 L CNN
 F 1 "JUMPER3" H 850 4250 50  0000 C BNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 850 4150 50  0001 C CNN
-F 3 "" H 850 4150 50  0000 C CNN
+F 3 "http://multimedia.3m.com/mws/media/548112O/3mtm-pin-strip-header-ts2181.pdf" H 850 4150 50  0001 C CNN
+F 4 "3M9455-ND" H 850 4150 60  0001 C CNN "Código Digikey"
 	1    850  4150
 	0    -1   -1   0   
 $EndComp
@@ -690,6 +709,7 @@ F 0 "C39" H 1150 3850 50  0000 L CNN
 F 1 "1uF" H 1150 3650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1388 3600 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 1350 3750 50  0001 C CNN
+F 4 "399-1284-1-ND" H 1350 3750 60  0001 C CNN "Código Digikey"
 	1    1350 3750
 	0    1    1    0   
 $EndComp
@@ -723,6 +743,7 @@ F 0 "C40" H 1450 4850 50  0000 L CNN
 F 1 "1uF" H 1450 4650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1388 4600 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 1350 4750 50  0001 C CNN
+F 4 "399-1284-1-ND" H 1350 4750 60  0001 C CNN "Código Digikey"
 	1    1350 4750
 	0    1    1    0   
 $EndComp
@@ -754,7 +775,8 @@ P 8750 3600
 F 0 "J2" H 8750 3900 50  0000 C CNN
 F 1 "IOs Multipropósito" V 8850 3600 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 8750 3600 50  0001 C CNN
-F 3 "" H 8750 3600 50  0000 C CNN
+F 3 "http://multimedia.3m.com/mws/media/548112O/3mtm-pin-strip-header-ts2181.pdf" H 8750 3600 50  0001 C CNN
+F 4 "3M9455-ND" H 8750 3600 60  0001 C CNN "Código Digikey"
 	1    8750 3600
 	1    0    0    -1  
 $EndComp
@@ -1261,7 +1283,7 @@ P 1300 6400
 F 0 "Jumper_STD1" H 1300 5987 60  0001 C CNN
 F 1 "J_STD" H 1300 6813 60  0001 C CNN
 F 2 "footprints:Jumpers_Default" H 1300 6400 60  0001 C CNN
-F 3 "" H 1300 6400 60  0000 C CNN
+F 3 "NONE" H 1300 6400 60  0001 C CNN
 	1    1300 6400
 	1    0    0    -1  
 $EndComp
@@ -1272,7 +1294,7 @@ P 2550 6850
 F 0 "Jumper_Config1" H 2550 5930 60  0001 C CNN
 F 1 "J_CFG" H 2550 7770 60  0001 C CNN
 F 2 "footprints:Jumpers_Default" H 2550 6850 60  0001 C CNN
-F 3 "" H 2550 6850 60  0000 C CNN
+F 3 "NONE" H 2550 6850 60  0001 C CNN
 	1    2550 6850
 	1    0    0    -1  
 $EndComp

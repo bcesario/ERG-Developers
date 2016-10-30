@@ -1215,6 +1215,7 @@ F 0 "R5" V 5200 2000 50  0000 L CNN
 F 1 "2.2k" V 5100 2300 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" H 5150 2200 50  0001 C CNN
 F 3 "http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" H 5150 2200 50  0001 C CNN
+F 4 "311-2.2KARCT-ND" V 5150 2200 60  0001 C CNN "Código Digikey"
 	1    5150 2200
 	0    -1   -1   0   
 $EndComp
