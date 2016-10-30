@@ -146,6 +146,7 @@ F 0 "C33" H 2575 2350 50  0000 L CNN
 F 1 "10uF" H 2575 2150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2588 2100 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 2550 2250 50  0001 C CNN
+F 4 "399-8012-1-ND" H 2550 2250 60  0001 C CNN "Código Digikey"
 	1    2550 2250
 	1    0    0    -1  
 $EndComp
@@ -157,6 +158,7 @@ F 0 "C34" H 1075 2350 50  0000 L CNN
 F 1 "10uF" H 1075 2150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1088 2100 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 1050 2250 50  0001 C CNN
+F 4 "399-8012-1-ND" H 1050 2250 60  0001 C CNN "Código Digikey"
 	1    1050 2250
 	1    0    0    -1  
 $EndComp
@@ -234,6 +236,7 @@ F 0 "C31" H 2275 1150 50  0000 L CNN
 F 1 "0.1uF" H 2275 950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2288 900 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 2250 1050 50  0001 C CNN
+F 4 "399-1170-1-ND" H 2250 1050 60  0001 C CNN "Código Digikey"
 	1    2250 1050
 	1    0    0    -1  
 $EndComp
@@ -245,6 +248,7 @@ F 0 "C32" H 2675 1150 50  0000 L CNN
 F 1 "10uF" H 2675 950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2688 900 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf" H 2650 1050 50  0001 C CNN
+F 4 "399-8012-1-ND" H 2650 1050 60  0001 C CNN "Código Digikey"
 	1    2650 1050
 	1    0    0    -1  
 $EndComp

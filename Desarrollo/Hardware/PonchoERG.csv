@@ -83,10 +83,10 @@ J2,IOs Multipropósito,Pin_Headers:Pin_Header_Straight_1x05,http://multimedia.3m
 Jumper_STD1,J_STD,footprints:Jumpers_Default,NONE
 Jumper_Config1,J_CFG,footprints:Jumpers_Default,NONE
 U13,NCP1117ST33T3G,TO_SOT_Packages_SMD:SOT-223,http://www.onsemi.com/pub_link/Collateral/NCP1117LP-D.PDF,NCP1117LPST33T3GOSCT-ND
-C33,10uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf
-C34,10uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf
-C31,0.1uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf
-C32,10uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf
+C33,10uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf,399-8012-1-ND
+C34,10uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf,399-8012-1-ND
+C31,0.1uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf,399-1170-1-ND
+C32,10uF,Capacitors_SMD:C_0805,http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf,399-8012-1-ND
 U11,ADuM6401,SMD_Packages:SO-16-W,http://www.analog.com/media/en/technical-documentation/data-sheets/ADuM6400_6401_6402_6403_6404.pdf,ADUM6401CRWZ-ND
 U12,ADuM2401,SMD_Packages:SO-16-W,http://www.analog.com/media/en/technical-documentation/data-sheets/ADuM2400_2401_2402.pdf,ADUM2401ARWZ-RLCT-ND
 XA1,Conn_Poncho2P_2x_20x2,Poncho_Esqueleto:Conn_Poncho_Izquierdo,https://media.digikey.com/PDF/Data%20Sheets/Sullins%20PDFs/xRxCzzzDxxN-RC_11636-B.pdf,S2011EC-20-ND

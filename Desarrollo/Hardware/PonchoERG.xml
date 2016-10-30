@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>D:/Bioingenieria/PROYECTO/ERG-Developers/Desarrollo/Hardware/PonchoERG.sch</source>
-    <date>30/10/2016 09:34:48</date>
+    <date>30/10/2016 16:33:34</date>
     <tool>Eeschema 4.0.2-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -980,6 +980,9 @@
       <value>10uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <datasheet>http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf</datasheet>
+      <fields>
+        <field name="Código Digikey">399-8012-1-ND</field>
+      </fields>
       <libsource lib="PonchoERG" part="C"/>
       <sheetpath names="/AISLACIÓN/" tstamps="/57BDC3A8/"/>
       <tstamp>57C3A802</tstamp>
@@ -988,6 +991,9 @@
       <value>10uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <datasheet>http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf</datasheet>
+      <fields>
+        <field name="Código Digikey">399-8012-1-ND</field>
+      </fields>
       <libsource lib="PonchoERG" part="C"/>
       <sheetpath names="/AISLACIÓN/" tstamps="/57BDC3A8/"/>
       <tstamp>57C3A86F</tstamp>
@@ -996,6 +1002,9 @@
       <value>0.1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <datasheet>http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf</datasheet>
+      <fields>
+        <field name="Código Digikey">399-1170-1-ND</field>
+      </fields>
       <libsource lib="PonchoERG" part="C"/>
       <sheetpath names="/AISLACIÓN/" tstamps="/57BDC3A8/"/>
       <tstamp>57C3B1DA</tstamp>
@@ -1004,6 +1013,9 @@
       <value>10uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <datasheet>http://www.kemet.com/Lists/ProductCatalog/Attachments/19/KEM_C1006_X5R_SMD.pdf</datasheet>
+      <fields>
+        <field name="Código Digikey">399-8012-1-ND</field>
+      </fields>
       <libsource lib="PonchoERG" part="C"/>
       <sheetpath names="/AISLACIÓN/" tstamps="/57BDC3A8/"/>
       <tstamp>57C3B223</tstamp>
@@ -1650,11 +1662,11 @@
     <library logical="device">
       <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
     </library>
-    <library logical="Jumpers_Config">
-      <uri>D:\Bioingenieria\PROYECTO\ERG-Developers\Desarrollo\Hardware\libs\Jumpers_Config.lib</uri>
-    </library>
     <library logical="Jumpers_Default">
       <uri>D:\Bioingenieria\PROYECTO\ERG-Developers\Desarrollo\Hardware\libs\Jumpers_Default.lib</uri>
+    </library>
+    <library logical="Jumpers_Config">
+      <uri>D:\Bioingenieria\PROYECTO\ERG-Developers\Desarrollo\Hardware\libs\Jumpers_Config.lib</uri>
     </library>
   </libraries>
   <nets>
