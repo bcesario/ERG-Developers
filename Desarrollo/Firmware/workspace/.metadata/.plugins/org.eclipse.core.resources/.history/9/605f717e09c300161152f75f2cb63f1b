@@ -1,0 +1,18 @@
+/*
+ * Aplicacion.c
+ *
+ *  Created on: 14/11/2016
+ *      Author: brunitocesario
+ */
+
+#include "PE_Error.h"
+#include "Aplicacion.h"
+#include "BH1750.h"
+
+byte Inicializar(void){
+	if(BH1750_Init()!=ERR_OK){
+		return ERR_FAILED;
+	}
+	return ERR_OK;
+}
+

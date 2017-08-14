@@ -1,0 +1,254 @@
+12:08:11 **** Build of configuration Debug for project Templogger ****
+make all 
+Building file: ../Static_Code/System/CPU_Init.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Static_Code/System/CPU_Init.d" -MT"Static_Code/System/CPU_Init.o" -c -o "Static_Code/System/CPU_Init.o" "../Static_Code/System/CPU_Init.c"
+Finished building: ../Static_Code/System/CPU_Init.c
+ 
+Building file: ../Static_Code/System/Peripherals_Init.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Static_Code/System/Peripherals_Init.d" -MT"Static_Code/System/Peripherals_Init.o" -c -o "Static_Code/System/Peripherals_Init.o" "../Static_Code/System/Peripherals_Init.c"
+Finished building: ../Static_Code/System/Peripherals_Init.c
+ 
+Building file: ../Static_Code/System/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Static_Code/System/Vectors.d" -MT"Static_Code/System/Vectors.o" -c -o "Static_Code/System/Vectors.o" "../Static_Code/System/Vectors.c"
+Finished building: ../Static_Code/System/Vectors.c
+ 
+Building file: ../Sources/Aplicacion.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Aplicacion.d" -MT"Sources/Aplicacion.o" -c -o "Sources/Aplicacion.o" "../Sources/Aplicacion.c"
+Finished building: ../Sources/Aplicacion.c
+ 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'INICIO_OnInterrupt':
+../Sources/Events.c:286:3: warning: implicit declaration of function 'ErrorSD' [-Wimplicit-function-declaration]
+   ErrorSD();
+   ^
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/exit.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Sources/exit.d" -MT"Sources/exit.o" -c -o "Sources/exit.o" "../Sources/exit.c"
+Finished building: ../Sources/exit.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Generated_Code/AdcLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AdcLdd1.d" -MT"Generated_Code/AdcLdd1.o" -c -o "Generated_Code/AdcLdd1.o" "../Generated_Code/AdcLdd1.c"
+Finished building: ../Generated_Code/AdcLdd1.c
+ 
+Building file: ../Generated_Code/AdcLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AdcLdd2.d" -MT"Generated_Code/AdcLdd2.o" -c -o "Generated_Code/AdcLdd2.o" "../Generated_Code/AdcLdd2.c"
+Finished building: ../Generated_Code/AdcLdd2.c
+ 
+Building file: ../Generated_Code/BAT.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BAT.d" -MT"Generated_Code/BAT.o" -c -o "Generated_Code/BAT.o" "../Generated_Code/BAT.c"
+Finished building: ../Generated_Code/BAT.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/BitIoLdd3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd3.d" -MT"Generated_Code/BitIoLdd3.o" -c -o "Generated_Code/BitIoLdd3.o" "../Generated_Code/BitIoLdd3.c"
+Finished building: ../Generated_Code/BitIoLdd3.c
+ 
+Building file: ../Generated_Code/BitIoLdd4.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd4.d" -MT"Generated_Code/BitIoLdd4.o" -c -o "Generated_Code/BitIoLdd4.o" "../Generated_Code/BitIoLdd4.c"
+Finished building: ../Generated_Code/BitIoLdd4.c
+ 
+Building file: ../Generated_Code/BitIoLdd5.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd5.d" -MT"Generated_Code/BitIoLdd5.o" -c -o "Generated_Code/BitIoLdd5.o" "../Generated_Code/BitIoLdd5.c"
+Finished building: ../Generated_Code/BitIoLdd5.c
+ 
+Building file: ../Generated_Code/Buzzer.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Buzzer.d" -MT"Generated_Code/Buzzer.o" -c -o "Generated_Code/Buzzer.o" "../Generated_Code/Buzzer.c"
+Finished building: ../Generated_Code/Buzzer.c
+ 
+Building file: ../Generated_Code/CD1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/CD1.d" -MT"Generated_Code/CD1.o" -c -o "Generated_Code/CD1.o" "../Generated_Code/CD1.c"
+Finished building: ../Generated_Code/CD1.c
+ 
+Building file: ../Generated_Code/CS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/CS1.d" -MT"Generated_Code/CS1.o" -c -o "Generated_Code/CS1.o" "../Generated_Code/CS1.c"
+Finished building: ../Generated_Code/CS1.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/ExtIntLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ExtIntLdd1.d" -MT"Generated_Code/ExtIntLdd1.o" -c -o "Generated_Code/ExtIntLdd1.o" "../Generated_Code/ExtIntLdd1.c"
+Finished building: ../Generated_Code/ExtIntLdd1.c
+ 
+Building file: ../Generated_Code/ExtIntLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ExtIntLdd2.d" -MT"Generated_Code/ExtIntLdd2.o" -c -o "Generated_Code/ExtIntLdd2.o" "../Generated_Code/ExtIntLdd2.c"
+Finished building: ../Generated_Code/ExtIntLdd2.c
+ 
+Building file: ../Generated_Code/FAT1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/FAT1.d" -MT"Generated_Code/FAT1.o" -c -o "Generated_Code/FAT1.o" "../Generated_Code/FAT1.c"
+Finished building: ../Generated_Code/FAT1.c
+ 
+Building file: ../Generated_Code/INICIO.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/INICIO.d" -MT"Generated_Code/INICIO.o" -c -o "Generated_Code/INICIO.o" "../Generated_Code/INICIO.c"
+Finished building: ../Generated_Code/INICIO.c
+ 
+Building file: ../Generated_Code/LedGraba.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/LedGraba.d" -MT"Generated_Code/LedGraba.o" -c -o "Generated_Code/LedGraba.o" "../Generated_Code/LedGraba.c"
+Finished building: ../Generated_Code/LedGraba.c
+ 
+Building file: ../Generated_Code/MUX.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/MUX.d" -MT"Generated_Code/MUX.o" -c -o "Generated_Code/MUX.o" "../Generated_Code/MUX.c"
+Finished building: ../Generated_Code/MUX.c
+ 
+Building file: ../Generated_Code/ONLOAD_V.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ONLOAD_V.d" -MT"Generated_Code/ONLOAD_V.o" -c -o "Generated_Code/ONLOAD_V.o" "../Generated_Code/ONLOAD_V.c"
+Finished building: ../Generated_Code/ONLOAD_V.c
+ 
+Building file: ../Generated_Code/PARADA.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PARADA.d" -MT"Generated_Code/PARADA.o" -c -o "Generated_Code/PARADA.o" "../Generated_Code/PARADA.c"
+Finished building: ../Generated_Code/PARADA.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/SD1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/SD1.d" -MT"Generated_Code/SD1.o" -c -o "Generated_Code/SD1.o" "../Generated_Code/SD1.c"
+Finished building: ../Generated_Code/SD1.c
+ 
+Building file: ../Generated_Code/SDLED_R.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/SDLED_R.d" -MT"Generated_Code/SDLED_R.o" -c -o "Generated_Code/SDLED_R.o" "../Generated_Code/SDLED_R.c"
+Finished building: ../Generated_Code/SDLED_R.c
+ 
+Building file: ../Generated_Code/SM1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/SM1.d" -MT"Generated_Code/SM1.o" -c -o "Generated_Code/SM1.o" "../Generated_Code/SM1.c"
+Finished building: ../Generated_Code/SM1.c
+ 
+Building file: ../Generated_Code/SS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/SS1.d" -MT"Generated_Code/SS1.o" -c -o "Generated_Code/SS1.o" "../Generated_Code/SS1.c"
+Finished building: ../Generated_Code/SS1.c
+ 
+Building file: ../Generated_Code/TI1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TI1.d" -MT"Generated_Code/TI1.o" -c -o "Generated_Code/TI1.o" "../Generated_Code/TI1.c"
+Finished building: ../Generated_Code/TI1.c
+ 
+Building file: ../Generated_Code/TIMER_Sensores.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TIMER_Sensores.d" -MT"Generated_Code/TIMER_Sensores.o" -c -o "Generated_Code/TIMER_Sensores.o" "../Generated_Code/TIMER_Sensores.c"
+Finished building: ../Generated_Code/TIMER_Sensores.c
+ 
+Building file: ../Generated_Code/TMOUT1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TMOUT1.d" -MT"Generated_Code/TMOUT1.o" -c -o "Generated_Code/TMOUT1.o" "../Generated_Code/TMOUT1.c"
+Finished building: ../Generated_Code/TMOUT1.c
+ 
+Building file: ../Generated_Code/TU1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU1.d" -MT"Generated_Code/TU1.o" -c -o "Generated_Code/TU1.o" "../Generated_Code/TU1.c"
+Finished building: ../Generated_Code/TU1.c
+ 
+Building file: ../Generated_Code/TU2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU2.d" -MT"Generated_Code/TU2.o" -c -o "Generated_Code/TU2.o" "../Generated_Code/TU2.c"
+Finished building: ../Generated_Code/TU2.c
+ 
+Building file: ../Generated_Code/TU3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU3.d" -MT"Generated_Code/TU3.o" -c -o "Generated_Code/TU3.o" "../Generated_Code/TU3.c"
+Finished building: ../Generated_Code/TU3.c
+ 
+Building file: ../Generated_Code/TempLED_A.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TempLED_A.d" -MT"Generated_Code/TempLED_A.o" -c -o "Generated_Code/TempLED_A.o" "../Generated_Code/TempLED_A.c"
+Finished building: ../Generated_Code/TempLED_A.c
+ 
+Building file: ../Generated_Code/TempSensors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TempSensors.d" -MT"Generated_Code/TempSensors.o" -c -o "Generated_Code/TempSensors.o" "../Generated_Code/TempSensors.c"
+Finished building: ../Generated_Code/TempSensors.c
+ 
+Building file: ../Generated_Code/TimerIntLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TimerIntLdd1.d" -MT"Generated_Code/TimerIntLdd1.o" -c -o "Generated_Code/TimerIntLdd1.o" "../Generated_Code/TimerIntLdd1.c"
+Finished building: ../Generated_Code/TimerIntLdd1.c
+ 
+Building file: ../Generated_Code/TimerIntLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TimerIntLdd2.d" -MT"Generated_Code/TimerIntLdd2.o" -c -o "Generated_Code/TimerIntLdd2.o" "../Generated_Code/TimerIntLdd2.c"
+Finished building: ../Generated_Code/TimerIntLdd2.c
+ 
+Building file: ../Generated_Code/TimerIntLdd3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TimerIntLdd3.d" -MT"Generated_Code/TimerIntLdd3.o" -c -o "Generated_Code/TimerIntLdd3.o" "../Generated_Code/TimerIntLdd3.c"
+Finished building: ../Generated_Code/TimerIntLdd3.c
+ 
+Building file: ../Generated_Code/TmDt1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TmDt1.d" -MT"Generated_Code/TmDt1.o" -c -o "Generated_Code/TmDt1.o" "../Generated_Code/TmDt1.c"
+Finished building: ../Generated_Code/TmDt1.c
+ 
+Building file: ../Generated_Code/UTIL1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/UTIL1.d" -MT"Generated_Code/UTIL1.o" -c -o "Generated_Code/UTIL1.o" "../Generated_Code/UTIL1.c"
+Finished building: ../Generated_Code/UTIL1.c
+ 
+Building file: ../Generated_Code/WAIT1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/WAIT1.d" -MT"Generated_Code/WAIT1.o" -c -o "Generated_Code/WAIT1.o" "../Generated_Code/WAIT1.c"
+Finished building: ../Generated_Code/WAIT1.c
+ 
+Building file: ../Generated_Code/ff.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/System" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/PDD" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Sources" -I"D:/Bioingenieria/Desimed/workspace/Templogger/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ff.d" -MT"Generated_Code/ff.o" -c -o "Generated_Code/ff.o" "../Generated_Code/ff.c"
+Finished building: ../Generated_Code/ff.c
+ 
+Building target: Templogger.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:/Bioingenieria/Desimed/workspace/Templogger/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"D:/Bioingenieria/Desimed/workspace/Templogger/Project_Settings/Linker_Files" -Wl,-Map,"Templogger.map" --specs=nano.specs -o "Templogger.elf"  ./Static_Code/System/CPU_Init.o ./Static_Code/System/Peripherals_Init.o ./Static_Code/System/Vectors.o  ./Sources/Aplicacion.o ./Sources/Events.o ./Sources/exit.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AdcLdd1.o ./Generated_Code/AdcLdd2.o ./Generated_Code/BAT.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BitIoLdd4.o ./Generated_Code/BitIoLdd5.o ./Generated_Code/Buzzer.o ./Generated_Code/CD1.o ./Generated_Code/CS1.o ./Generated_Code/Cpu.o ./Generated_Code/ExtIntLdd1.o ./Generated_Code/ExtIntLdd2.o ./Generated_Code/FAT1.o ./Generated_Code/INICIO.o ./Generated_Code/LedGraba.o ./Generated_Code/MUX.o ./Generated_Code/ONLOAD_V.o ./Generated_Code/PARADA.o ./Generated_Code/PE_LDD.o ./Generated_Code/SD1.o ./Generated_Code/SDLED_R.o ./Generated_Code/SM1.o ./Generated_Code/SS1.o ./Generated_Code/TI1.o ./Generated_Code/TIMER_Sensores.o ./Generated_Code/TMOUT1.o ./Generated_Code/TU1.o ./Generated_Code/TU2.o ./Generated_Code/TU3.o ./Generated_Code/TempLED_A.o ./Generated_Code/TempSensors.o ./Generated_Code/TimerIntLdd1.o ./Generated_Code/TimerIntLdd2.o ./Generated_Code/TimerIntLdd3.o ./Generated_Code/TmDt1.o ./Generated_Code/UTIL1.o ./Generated_Code/WAIT1.o ./Generated_Code/ff.o   
+Finished building target: Templogger.elf
+ 
+
+12:08:58 Build Finished (took 46s.696ms)
+

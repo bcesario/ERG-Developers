@@ -1,0 +1,168 @@
+/* ###################################################################
+**     Filename    : main.c
+**     Project     : Luxometer
+**     Processor   : MK64FN1M0VLL12
+**     Version     : Driver 01.01
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2016-12-07, 09:27, # CodeGen: 10
+**     Abstract    :
+**         Main module.
+**         This module contains user's application code.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file main.c
+** @version 01.01
+** @brief
+**         Main module.
+**         This module contains user's application code.
+*/         
+/*!
+**  @addtogroup main_module main module documentation
+**  @{
+*/         
+/* MODULE main */
+
+
+/* Including needed modules to compile this module/procedure */
+#include "Cpu.h"
+#include "Events.h"
+#include "WAIT1.h"
+#include "GI2C1.h"
+#include "CI2C1.h"
+#include "Term1.h"
+#include "Inhr1.h"
+#include "ASerialLdd1.h"
+#include "SM1.h"
+#include "LED_ON.h"
+#include "START.h"
+#include "RESET.h"
+#include "PWDN.h"
+#include "DRDY.h"
+/*------Includes modules to Poncho------*/
+#include "Definitions_ADS1299.h"
+#include "Drv_GPIO.h"
+#include "Drv_SSP.h"
+#include "Drv_Devices.h"
+#include "Drv_ADS1299.h"
+/* Including shared modules, which are used for whole project */
+#include "PE_Types.h"
+#include "PE_Error.h"
+#include "PE_Const.h"
+#include "IO_Map.h"
+#include "PDD_Includes.h"
+#include "Init_Config.h"
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+/*lint -save  -e970 Disable MISRA rule (6.3) checking. */
+int main(void)
+/*lint -restore Enable MISRA rule (6.3) checking. */
+{
+  /* Write your local variable definition here */
+
+  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
+  PE_low_level_init();
+  /*** End of Processor Expert internal initialization.                    ***/
+
+  /* Write your code here */
+
+  //printf("Hello\n");
+  Term1_SendStr("ERG_Firmware 1.0\r\n");
+  /*Drv_Devices_startDevices();
+
+  //bool master = Drv_Devices_isMaster();
+  bool master = TRUE;
+
+  if(master == TRUE) //If the board is Master, can get commands via UART
+  {
+  	Drv_Devices_startFromScratch();
+
+  	while(1)
+  	{
+  		Drv_Devices_sendChannelData(); // send data when is available
+
+  		Drv_Devices_eventSerial(); //receive commands
+  	}
+  }
+  else //If the board is Slave, can't get commands via UART
+  {
+  	Drv_Devices_startAsSlave();
+
+  	while(1){}
+  }*/
+
+  Drv_ADS1299_initialize();
+
+  /*//------GPIOs init to control ADS------
+  CS_SPI_Init(NULL);
+  START_Init(NULL);
+  RESET_Init(NULL);
+  PWDN_Init(NULL);
+  DRDY_Init(NULL);
+  LED_ON_Init(NULL);
+
+  WAIT1_Waitms(1000); //Wait 1 second to indicate that GPIOs has been initializated
+
+  Drv_GPIO_FRDM_setup(LED_ON,FALSE); // Board configuration beggining
+
+  //------GPIOs init setup------
+  Drv_GPIO_FRDM_setup(START,FALSE);
+  Drv_GPIO_FRDM_setup(RESET,TRUE);
+  Drv_GPIO_FRDM_setup(PWDN,TRUE);
+
+  WAIT1_Waitms(1000); //Wait 1 second for Power-On Reset
+
+  //------Reset ADS------
+  Drv_GPIO_FRDM_setup(RESET,FALSE);
+  WAIT1_Waitus(4);
+  Drv_GPIO_FRDM_setup(RESET,TRUE);
+  WAIT1_Waitus(20); //argument should be 18*tCLK or more, where tCLK = 1/2,048MHz = 488nSeg
+
+  Drv_GPIO_FRDM_setup(START,TRUE);
+
+  uint8_t documentoADS = Drv_ADS1299_RREG(ID_REG,BOARD_ADS);*/
+
+  /*//-----Transmission Example-----
+  (void)Drv_SSP_transferByte(_SDATAC); //Send SDATAC command to Stop Read Data Continous
+
+  Drv_ADS1299_WREG(CONFIG3,0xEC,BOARD_ADS); //Setting Internal Reference
+  Drv_ADS1299_WREG(CONFIG1,0x96,BOARD_ADS); //Reset Value register CONFIG1
+
+  Drv_ADS1299_WREG(CH1SET,0x01,BOARD_ADS);  //Set Channel 1 to input short
+
+  Drv_ADS1299_WREG(CONFIG2,0xC0,BOARD_ADS); //Reset Value register CONFIG2
+
+  Drv_ADS1299_WREG(CH1SET,0x04,BOARD_ADS);  //Channel input from temperature sensor
+
+  Drv_GPIO_FRDM_setup(START,TRUE);			//Activate conversion
+
+  (void)Drv_SSP_transferByte(_RDATAC);*/
+
+  /* For example: for(;;) { } */
+
+  /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
+  /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
+  #ifdef PEX_RTOS_START
+    PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
+  #endif
+  /*** End of RTOS startup code.  ***/
+  /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
+  for(;;){}
+  /*** Processor Expert end of main routine. DON'T WRITE CODE BELOW!!! ***/
+} /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+
+/* END main */
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/
