@@ -70,56 +70,42 @@ int main(void)
 	/*** End of Processor Expert internal initialization.                    ***/
 
 	/* Write your code here */
-
-	Drv_Devices_startFromScratch();
-
-	//Habilito BIAS para driver pierna derecha y referenciar paciente
-	Drv_ADS1299_WREG(CH3SET,0x00,BOARD_ADS);
-	/*Drv_ADS1299_WREG(BIAS_SENSP,0x03,BOARD_ADS);
-	Drv_ADS1299_WREG(BIAS_SENSN,0x03,BOARD_ADS);*/
-/*	Drv_ADS1299_WREG(LOFF_SENSP,0x0C,BOARD_ADS);
-	Drv_ADS1299_WREG(LOFF_SENSN,0x0C,BOARD_ADS);
-	Drv_ADS1299_WREG(LOFF_FLIP,0xF3,BOARD_ADS);*/
-
-	Drv_ADS1299_SDATAC(BOARD_ADS);
-
-	WAIT1_Waitms(1000);
-
-	Drv_GPIO_FRDM_setup(LED_ON,FALSE); //When the GREEN LED is ON, the device has been initialized
-
+	//Declaración de variables locales en main.c
 	uint32_t read;
-	uint32_t reg;
+	uint32_t reg = 0;
 	float volt;
 	int channel;
 	int cant_canales;
-	bool actual;
-	bool anterior = TRUE;
-
+	//Inicialización y configuración interna de registros de ADS1299.
+	Drv_Devices_startFromScratch();
+	//Configuración de canal de sincronización y sensado de estímulo. Habilitación driver pierna derecha y referencia paciente.
+	Drv_ADS1299_WREG(CH1SET,0x05,BOARD_ADS);
+	Drv_ADS1299_WREG(CH2SET,0x05,BOARD_ADS);
+	Drv_ADS1299_WREG(CH3SET,0x05,BOARD_ADS);
+	//Drv_ADS1299_WREG(BIAS_SENSP,0xFF,BOARD_ADS);
+	//Drv_ADS1299_WREG(BIAS_SENSN,0xFF,BOARD_ADS);
+	//Detención de modo por defecto de adquisición continua de datos.
+	Drv_ADS1299_SDATAC(BOARD_ADS);
+	WAIT1_Waitms(1000);
+	cant_canales = 9; //Cantidad de canales + 1.
+	//Encendido de led como indicador del inicio de la adquisición.
+	Drv_GPIO_FRDM_setup(LED_ON,FALSE);
+	//Habilitación de adquisición de ADS1299.
 	Drv_GPIO_FRDM_setup(START,TRUE);
-
-	WAIT1_Waitms(20); //Wait X mSeg to settling time and data are ready. See TABLE 8, pag 29 datasheet ADS1299
-
-	//while(!Drv_ADS1299_isDataAvailable()){}
-
-	//Drv_ADS1299_csLow(BOARD_ADS); //open SPI
-
-	cant_canales = 9;
-
+	//Tiempo de establecimiento requerido, transcurrido el cual se tiene primera adquisición. Ver TABLA 8, pág. 29 datasheet ADS1299.
+	WAIT1_Waitms(20);
+	//Identificar Front End leyendo registro ID. ID de ADS1299: 0x3E.
+	//reg = Drv_ADS1299_RREG(ID_REG,BOARD_ADS);
+	//Comienzo de adquisición y envío de datos.
 	while(TRUE){
-
-/*		for(channel=1;channel<cant_canales;channel++){
-			Term1_SendNum(Drv_ADS1299_getGain(channel, BOARD_ADS));
-			Term1_CRLF();
-		}*/
-
+		//Bucle de espera de dato convertido.
 		while(!Drv_ADS1299_isDataAvailable()){}
-
+		//Función de comando para lectura de datos adquiridos desde ADS1299 a vector de memoria en FRDM-K64F.
 		Drv_ADS1299_RDATA(BOARD_ADS);
-
+		//Bucle de lectura de datos desde vector, conversión a tensión y envío a PC.
 		for(channel=1;channel<cant_canales;channel++){
 			read = Drv_ADS1299_getboardData(channel,BOARD_ADS);
 			read = read&0x00FFFFFF;
-
 			//--------CONVERSION DE DATOS---------
 			if((read&0x00800000)>0){
 				read = (~read) + 1;
@@ -129,14 +115,10 @@ int main(void)
 			else{
 				volt = read*4.5/(0x007FFFFF);
 			}
-
-			//ACA ESTA EL OTRO GRAN PROBLEMA, EN Term1 o sea la transmision UART
-			Term1_SendFloatNum(volt);
-			//Term1_SendNum(read);
-			Term1_SendChar(',');
+			Term1_SendFloatNum(volt); //Envío de dato.
+			Term1_SendChar(','); //Envío de separador de datos de canal
 		}
-		Term1_CRLF();
-		//reg = Drv_ADS1299_RREG(ID_REG,BOARD_ADS);
+		Term1_CRLF(); //Envío de comando de fin de línea.
 	}
 
 	/* For example: for(;;) { } */

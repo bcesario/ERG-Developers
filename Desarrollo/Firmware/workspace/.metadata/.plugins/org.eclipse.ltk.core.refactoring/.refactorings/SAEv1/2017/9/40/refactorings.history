@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SAEv1.0/Debug/Luxometer.elf&apos; to &apos;SAEv1.0.elf&apos;" description="Rename resource &apos;Luxometer.elf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/Luxometer.elf" name="SAEv1.0.elf" stamp="1506788056820" updateReferences="true"/>
+</session>

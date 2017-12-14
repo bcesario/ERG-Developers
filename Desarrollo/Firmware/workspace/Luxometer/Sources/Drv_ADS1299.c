@@ -177,7 +177,7 @@ void Drv_ADS1299_initialize_ads()
 	
 	Drv_GPIO_FRDM_setup(RESET,FALSE);
 
-	WAIT1_Waitus(4); //Wait 4*tCLK for correct RESET instruction
+	WAIT1_Waitus(4); //Wait 4*tCLK o more for correct RESET instruction
 
 	Drv_GPIO_FRDM_setup(RESET,TRUE);
 
@@ -189,16 +189,16 @@ void Drv_ADS1299_initialize_ads()
 
 	numChannels = 8; //expect up to 8 ADS channels
 
-	Drv_ADS1299_WREG(CONFIG1, 0x96, BOARD_ADS); //Turn off clk output if no slave present and set the data rate (see page 40 datasheet)
+	Drv_ADS1299_WREG(CONFIG1, 0x96, BOARD_ADS); //Configuración de tasa de muestreo. 0x96 = 250 SPS.
 
 	Drv_ADS1299_WREG(CONFIG3, 0xE0, BOARD_ADS); // enable internal reference drive and etc.
-	//Drv_ADS1299_WREG(CONFIG2, 0xD0, BOARD_ADS);
+	Drv_ADS1299_WREG(CONFIG2, 0xD5, BOARD_ADS); //Señales de testeo generadas internamente. Vpp = 4mV, Frec = 2Hz.
 	//Drv_ADS1299_WREG(CONFIG4, 0x02,BOARD_ADS);
 
     // DEFAULT CHANNEL SETTINGS FOR ADS
-    defaultChannelSettings[POWER_DOWN] = NO;        // on = NO, off = YES
+    defaultChannelSettings[POWER_DOWN] = YES;        // on = NO, off = YES
     defaultChannelSettings[GAIN_SET] = ADS_GAIN01;     // Gain setting
-    defaultChannelSettings[INPUT_TYPE_SET] = ADSINPUT_NORMAL;// input muxer setting
+    defaultChannelSettings[INPUT_TYPE_SET] = ADSINPUT_TESTSIG;// input muxer setting
     defaultChannelSettings[BIAS_SET] = NO;    // add this channel to bias generation
     defaultChannelSettings[SRB2_SET] = NO;       // connect this P side to SRB2
     defaultChannelSettings[SRB1_SET] = NO;       // don't use SRB1

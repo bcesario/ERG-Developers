@@ -23,7 +23,7 @@ C_DEPS += \
 Static_Code/System/%.o: ../Static_Code/System/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Static_Code/System" -I"D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Static_Code/PDD" -I"D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Sources" -I"D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Generated_Code" -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Static_Code/System" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Static_Code/PDD" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Sources" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Generated_Code" -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

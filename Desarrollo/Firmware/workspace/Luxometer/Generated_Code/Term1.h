@@ -7,7 +7,7 @@
 **     Version     : Component 02.061, Driver 03.22, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-01-30, 09:28, # CodeGen: 72
+**     Date/Time   : 2017-12-14, 13:35, # CodeGen: 183
 **     Abstract    :
 **This components generates low-level console IO routines for selected UART.
 **     Settings    :

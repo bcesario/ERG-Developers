@@ -1,6 +1,15 @@
-13:26:52 **** Incremental Build of configuration Debug for project Luxometer ****
+18:57:34 **** Incremental Build of configuration Debug for project Luxometer ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Static_Code/System" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Static_Code/PDD" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Sources" -I"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Luxometer.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Project_Settings/Linker_Files" -Wl,-Map,"Luxometer.map" -specs=nano.specs -specs=nosys.specs -o "Luxometer.elf"  ./Static_Code/System/CPU_Init.o ./Static_Code/System/Peripherals_Init.o ./Static_Code/System/Vectors.o  ./Sources/BH1750.o ./Sources/Drv_ADS1299.o ./Sources/Drv_Devices.o ./Sources/Drv_GPIO.o ./Sources/Drv_SSP.o ./Sources/Drv_UART.o ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/CS_SPI.o ./Generated_Code/Cpu.o ./Generated_Code/DRDY.o ./Generated_Code/Inhr1.o ./Generated_Code/LED_ON.o ./Generated_Code/PE_LDD.o ./Generated_Code/PWDN.o ./Generated_Code/RESET.o ./Generated_Code/SM1.o ./Generated_Code/SMasterLdd1.o ./Generated_Code/START.o ./Generated_Code/Term1.o ./Generated_Code/UTIL1.o ./Generated_Code/WAIT1.o ./Generated_Code/WAIT2.o   
+Finished building target: Luxometer.elf
+ 
 
-13:26:53 Build Finished (took 521ms)
+18:57:36 Build Finished (took 2s.245ms)
 

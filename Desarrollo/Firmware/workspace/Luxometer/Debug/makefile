@@ -53,7 +53,7 @@ all: Luxometer.elf secondary-outputs
 Luxometer.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"D:/Bioingenieria/PROYECTO/Pruebas Firmware/workspace/Luxometer/Project_Settings/Linker_Files" -Wl,-Map,"Luxometer.map" -specs=nano.specs -specs=nosys.specs -o "Luxometer.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"D:/Bioingenieria/PROYECTO/Firmware/workspace/Luxometer/Project_Settings/Linker_Files" -Wl,-Map,"Luxometer.map" -specs=nano.specs -specs=nosys.specs -o "Luxometer.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
